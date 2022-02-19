@@ -1,0 +1,26 @@
+.castbar {
+  --shadow-depth: 4px;
+  --shadow-color: black;
+
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color);
+}
+
+.castbar--progress {
+  background: #fffbf6;
+  border: 3px solid #e49617;
+  border-radius: 6px;
+  height: 13px;
+
+  width: max(calc(var(--duration) * var(--grid-cell-width)), 15px);
+}
+
+.castbar--tankBuster {
+  border-color: red;
+  background: #ffd4d4;
+}

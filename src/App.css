@@ -1,0 +1,74 @@
+body.in-overlay {
+  overflow: hidden;
+}
+
+.App {
+  --grid-cell-width: 90px;
+
+  height: 100%;
+  background-color: black;
+}
+
+.App--overlay {
+  background-color: transparent;
+}
+
+.timeline {
+  outline: 1px solid gray;
+  padding: 15px 0;
+  display: flex;
+  height: 78px;
+  background-size: var(--grid-cell-width);
+  background-image: linear-gradient(to right, grey 2px, transparent 1px);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.timeline--boss {
+  align-items: end;
+}
+
+.Action--position {
+  position: absolute;
+  left: calc(var(--event-start) * var(--grid-cell-width));
+}
+
+.legend {
+  display: flex;
+  gap: var(--grid-cell-width);
+}
+
+.legend > div:before {
+  content: attr(data-timestamp);
+  position: absolute;
+}
+
+.timeline,
+.legend {
+  width: calc(var(--lastEventFinishTime) * var(--grid-cell-width) + 100vw);
+}
+
+.App--animate .timeline,
+.App--animate .legend {
+  animation-name: slide;
+  animation-duration: calc(var(--lastEventFinishTime) * 1s);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
+}
+
+.controls {
+  position: fixed;
+  margin: 0 2rem;
+}
+
+.controls button {
+  font-size: 1.5rem;
+}

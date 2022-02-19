@@ -1,0 +1,48 @@
+{
+  "name": "ffxiv-raid-timeline",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Overlay that displays an animated timeline of upcoming boss actions in an encounter",
+  "main": "./src/main.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reyronald/ffxiv-raid-timeline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reyronald/ffxiv-raid-timeline/issues"
+  },
+  "homepage": "https://github.com/reyronald/ffxiv-raid-timeline#readme",
+  "author": {
+    "name": "Ronald Rey",
+    "email": "reyronald@gmail.com",
+    "url": "https://github.com/reyronald"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "clsx": "^1.1.1",
+    "format-duration": "^1.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "keywords": [
+    "ffxiv",
+    "dalamud",
+    "act",
+    "overlay",
+    "plugin",
+    "addon",
+    "raid",
+    "timeline"
+  ]
+}
