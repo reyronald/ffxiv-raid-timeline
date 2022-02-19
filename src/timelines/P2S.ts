@@ -115,7 +115,7 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Indomitability",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("1:59"),
+    start: getSecondsFromString("2:03"),
   },
   {
     actionName: "Predatory Avarice",
@@ -139,7 +139,7 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Fey Blessing",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("2:36"),
+    start: getSecondsFromString("2:40"),
   },
   {
     actionName: "Channeling Flow",
@@ -157,7 +157,13 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Whispering Dawn",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("3:09"),
+    start: getSecondsFromString("3:12"),
+  },
+  {
+    actionName: "Dissipation",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("3:15"),
   },
   {
     actionName: "Double Impact",
@@ -173,16 +179,10 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("3:21"),
   },
   {
-    actionName: "Summon Seraph",
+    actionName: "Expedient",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("3:23"),
-  },
-  {
-    actionName: "Consolation",
-    source: "player",
-    type: "ogcd",
-    start: getSecondsFromString("3:29"),
+    start: getSecondsFromString("3:31"),
   },
   {
     actionName: "Murky Depths",
@@ -191,16 +191,16 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("3:27", "3:32"),
   },
   {
-    actionName: "Consolation",
-    source: "player",
-    type: "ogcd",
-    start: getSecondsFromString("3:34"),
-  },
-  {
     actionName: "Sewage Deluge",
     source: "boss",
     cast: "long",
     ...getStartAndDuration("3:44", "3:49"),
+  },
+  {
+    actionName: "Fey Blessing",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("3:52"),
   },
   {
     actionName: "Shockwave",
@@ -274,12 +274,6 @@ export const P2STimeline: TimelineEvent[] = [
     cast: "long",
     tankBuster: true,
     ...getStartAndDuration("4:37", "4:42"),
-  },
-  {
-    actionName: "Fey Union",
-    source: "player",
-    type: "ogcd",
-    start: getSecondsFromString("4:42"),
   },
   {
     actionName: "Murky Depths",
@@ -564,10 +558,16 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("8:32"),
   },
   {
+    actionName: "Sacred Soil",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("8:34"),
+  },
+  {
     actionName: "Indomitability",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("8:35"),
+    start: getSecondsFromString("8:36"),
   },
   {
     actionName: "Coherence (Laser)",
@@ -586,6 +586,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "instant",
     start: getSecondsFromString("8:47"),
+  },
+  {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("8:50"),
   },
   {
     actionName: "Dissociation",
@@ -642,15 +648,10 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("9:30", "9:38"),
   },
   {
-    actionName: "Whispering Dawn",
-    source: "player",
-    type: "ogcd",
-    start: getSecondsFromString("9:39"),
-  },
-  {
     actionName: "Doubled Impact",
     source: "boss",
     cast: "long",
+    tankBuster: true,
     ...getStartAndDuration("9:44", "9:49"),
   },
   {
@@ -658,6 +659,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "player",
     type: "ogcd",
     start: getSecondsFromString("9:49"),
+  },
+  {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("9:51"),
   },
   {
     actionName: "Summon Seraph",
