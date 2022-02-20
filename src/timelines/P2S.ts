@@ -166,7 +166,7 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("3:15"),
   },
   {
-    actionName: "Double Impact",
+    actionName: "Doubled Impact",
     source: "boss",
     cast: "long",
     tankBuster: true,
@@ -477,6 +477,7 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Doubled Impact",
     source: "boss",
     cast: "long",
+    tankBuster: true,
     ...getStartAndDuration("7:29", "7:34"),
   },
   {
@@ -495,7 +496,13 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Consolation",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("1:40"),
+    start: getSecondsFromString("7:38"),
+  },
+  {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("7:40"),
   },
   {
     actionName: "Murkpy Depths",
@@ -579,7 +586,7 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Fey Blessing",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("8:38"),
+    start: getSecondsFromString("8:42"),
   },
   {
     actionName: "Great Typhoon + Crash",
@@ -646,6 +653,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("9:30", "9:38"),
+  },
+  {
+    actionName: "Fey Blessing",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("9:42"),
   },
   {
     actionName: "Doubled Impact",
