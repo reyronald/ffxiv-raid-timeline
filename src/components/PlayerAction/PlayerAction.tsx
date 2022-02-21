@@ -48,15 +48,20 @@ function useActionIcon(actionName: string) {
       const path = "/i/000000/000104.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
+    } else if (actionName === "Place") {
+      // https://xivapi.com/i/000000/000527.png
+      const path = "/i/000000/000527.png";
+      setIcon(path);
+      iconCache.set(actionName, Promise.resolve(path));
     } else if (actionName === "Surecast") {
       // https://xivapi.com/i/000000/000869.png
       const path = "/i/000000/000869.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
     } else {
-      // e.g. https://xivapi.com/search?indexes=Action&string=Expedient
+      // e.g. https://xivapi.com/search?indexes=Action,Item&string=Expedient
       const promise = fetch(
-        `https://xivapi.com/search?indexes=Action&string=${actionName}`
+        `https://xivapi.com/search?indexes=Action,Item&string=${actionName}`
       )
         .then((r) => r.json())
         .then((response: XIVAPIResponse) => response.Results[0].Icon);

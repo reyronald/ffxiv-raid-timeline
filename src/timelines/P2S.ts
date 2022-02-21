@@ -3,6 +3,12 @@ import { getStartAndDuration, getSecondsFromString } from "../utils";
 
 export const P2STimeline: TimelineEvent[] = [
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("0:01"),
+  },
+  {
     actionName: "Murky Depths",
     source: "boss",
     cast: "long",
@@ -16,10 +22,22 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("0:21", "0:26"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("0:31"),
+  },
+  {
     actionName: "Sewage Deluge",
     source: "boss",
     cast: "long",
     ...getStartAndDuration("0:33", "0:38"),
+  },
+  {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("0:40"),
   },
   {
     actionName: "Expedient",
@@ -36,7 +54,7 @@ export const P2STimeline: TimelineEvent[] = [
   {
     actionName: "Biolysis",
     source: "player",
-    type: "ogcd",
+    type: "gcd",
     start: getSecondsFromString("1:01"),
   },
   {
@@ -68,6 +86,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "player",
     type: "ogcd",
     start: getSecondsFromString("1:26"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("1:31"),
   },
   {
     actionName: "Murky Depths",
@@ -106,6 +130,12 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("1:54"),
   },
   {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("1:57"),
+  },
+  {
     actionName: "Ominous Bubbling (detonation)",
     source: "boss",
     cast: "instant",
@@ -130,6 +160,12 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("2:24", "2:32"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("2:31"),
+  },
+  {
     actionName: "Deadly Current",
     source: "boss",
     cast: "instant",
@@ -146,6 +182,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("2:47", "2:52"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("3:01"),
   },
   {
     actionName: "Great Typhoon + Crash",
@@ -166,7 +208,7 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("3:15"),
   },
   {
-    actionName: "Doubled Impact",
+    actionName: "Doubled Impact (shared)",
     source: "boss",
     cast: "long",
     tankBuster: true,
@@ -179,10 +221,16 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("3:21"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("3:31"),
+  },
+  {
     actionName: "Expedient",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("3:31"),
+    start: getSecondsFromString("3:32"),
   },
   {
     actionName: "Murky Depths",
@@ -209,6 +257,12 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("3:59", "4:07"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("4:01"),
+  },
+  {
     actionName: "Surecast",
     source: "player",
     type: "ogcd",
@@ -225,6 +279,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("4:11", "4:19"),
+  },
+  {
+    actionName: "Whispering Dawn",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("4:20"),
   },
   {
     actionName: "△ ☐ 1",
@@ -255,6 +315,18 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "instant",
     start: getSecondsFromString("4:26"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("4:31"),
+  },
+  {
+    actionName: "Grade 6 Tincture of Mind",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("4:32"),
   },
   {
     actionName: "Deployment Tactics",
@@ -298,6 +370,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "player",
     type: "ogcd",
     start: getSecondsFromString("4:51"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("5:01"),
   },
   {
     actionName: "Channeling Overflow",
@@ -348,6 +426,12 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("5:29", "5:34"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("5:31"),
+  },
+  {
     actionName: "Great Typhoon + Crash",
     source: "boss",
     cast: "instant",
@@ -372,10 +456,22 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("6:01", "6:05"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("6:01"),
+  },
+  {
     actionName: "Dissociation",
     source: "boss",
     cast: "long",
     ...getStartAndDuration("6:07", "6:11"),
+  },
+  {
+    actionName: "Dissipation",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("6:16"),
   },
   {
     actionName: "Deadly Current",
@@ -388,6 +484,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("6:21", "6:30"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("6:31"),
   },
   {
     actionName: "Dissociation",
@@ -412,6 +514,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("6:57", "7:00"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("7:01"),
   },
   {
     actionName: "Sewage Eruption",
@@ -450,10 +558,10 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("7:10"),
   },
   {
-    actionName: "Expedient",
+    actionName: "Sacred Soil",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("7:13"),
+    start: getSecondsFromString("7:16"),
   },
   {
     actionName: "Coherence (Leap)",
@@ -468,23 +576,29 @@ export const P2STimeline: TimelineEvent[] = [
     start: getSecondsFromString("7:22"),
   },
   {
-    actionName: "Whispering Dawn",
+    actionName: "Fey Blessing",
     source: "player",
     type: "ogcd",
     start: getSecondsFromString("7:22"),
   },
   {
-    actionName: "Doubled Impact",
+    actionName: "Doubled Impact (shared)",
     source: "boss",
     cast: "long",
     tankBuster: true,
     ...getStartAndDuration("7:29", "7:34"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("7:31"),
+  },
+  {
     actionName: "Protraction",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("7:31"),
+    start: getSecondsFromString("7:32"),
   },
   {
     actionName: "Summon Seraph",
@@ -523,10 +637,28 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("7:55", "8:00"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("8:01"),
+  },
+  {
+    actionName: "Place",
+    source: "player",
+    type: "ogcd",
+    start: getSecondsFromString("8:02"),
+  },
+  {
     actionName: "Channeling Overflow",
     source: "boss",
     cast: "long",
     ...getStartAndDuration("8:11", "8:16"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("8:31"),
   },
   {
     actionName: "Great Typhoon + Crash",
@@ -544,7 +676,7 @@ export const P2STimeline: TimelineEvent[] = [
     actionName: "Sprint",
     source: "player",
     type: "ogcd",
-    start: getSecondsFromString("8:26"),
+    start: getSecondsFromString("8:24"),
   },
   {
     actionName: "Fey Illumination",
@@ -607,6 +739,12 @@ export const P2STimeline: TimelineEvent[] = [
     ...getStartAndDuration("8:55", "8:59"),
   },
   {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("9:01"),
+  },
+  {
     actionName: "Sewage Eruption",
     source: "boss",
     cast: "long",
@@ -647,6 +785,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("9:27", "9:35"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("9:31"),
   },
   {
     actionName: "Ominous Bubbling",
@@ -696,6 +840,12 @@ export const P2STimeline: TimelineEvent[] = [
     source: "boss",
     cast: "long",
     ...getStartAndDuration("9:56", "10:01"),
+  },
+  {
+    actionName: "Biolysis",
+    source: "player",
+    type: "gcd",
+    start: getSecondsFromString("10:01"),
   },
   {
     actionName: "Consolation",
