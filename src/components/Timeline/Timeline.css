@@ -39,6 +39,13 @@
   content: attr(data-timestamp);
   font-weight: bold;
   position: absolute;
+
+  --shadow-depth: 4px;
+  --shadow-color: black;
+  text-shadow: 0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color),
+    0 0 var(--shadow-depth) var(--shadow-color);
 }
 
 @keyframes slide {

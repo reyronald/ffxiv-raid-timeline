@@ -13,6 +13,7 @@ import "./Timeline.css";
 type AnimationPlayState = "stopped" | "running" | "paused";
 
 type TimelineProps = {
+  overlay: boolean;
   zoneName: string | null;
   isCombatActive: boolean;
   playerEvents: TimelinePlayerEvent[];
@@ -20,6 +21,7 @@ type TimelineProps = {
 };
 
 export function Timeline({
+  overlay,
   zoneName,
   isCombatActive,
   playerEvents,
@@ -89,28 +91,30 @@ export function Timeline({
         ))}
       </div>
 
-      <div className="Timeline--controls">
-        <div className="Timeline--time-and-zone">
-          <time dateTime={datetime}>{datetime}</time> {zoneName}
+      {!overlay && (
+        <div className="Timeline--controls">
+          <div className="Timeline--time-and-zone">
+            <time dateTime={datetime}>{datetime}</time> {zoneName}
+          </div>
+
+          <button
+            onClick={() =>
+              setAnimationPlayState((prev) =>
+                prev === "running" ? "paused" : "running"
+              )
+            }
+          >
+            Play/Pause
+          </button>
+
+          <button
+            onClick={() => setAnimationPlayState("stopped")}
+            disabled={animationPlayState === "stopped"}
+          >
+            Restart
+          </button>
         </div>
-
-        <button
-          onClick={() =>
-            setAnimationPlayState((prev) =>
-              prev === "running" ? "paused" : "running"
-            )
-          }
-        >
-          Play/Pause
-        </button>
-
-        <button
-          onClick={() => setAnimationPlayState("stopped")}
-          disabled={animationPlayState === "stopped"}
-        >
-          Restart
-        </button>
-      </div>
+      )}
     </div>
   );
 }

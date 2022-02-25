@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import { Timeline } from "./components/Timeline/Timeline";
 import { useWebSocket } from "./useWebSocket";
 import { getTimeline } from "./timelines";
@@ -28,8 +30,9 @@ function App() {
   const zoneName = zoneNameFromACT || zoneNameFromStore;
 
   return (
-    <main className="App">
+    <main className={clsx("App", overlay && "App--overlay")}>
       <Timeline
+        overlay={overlay}
         zoneName={zoneName}
         isCombatActive={isCombatActive}
         playerEvents={playerEvents}
