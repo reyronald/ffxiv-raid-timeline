@@ -104,14 +104,14 @@ export function Timeline({
               )
             }
           >
-            Play/Pause
+            {animationPlayState === "running" ? "⏸ Pause" : "▶ Play"}
           </button>
 
           <button
             onClick={() => setAnimationPlayState("stopped")}
             disabled={animationPlayState === "stopped"}
           >
-            Restart
+            ⏪ Restart
           </button>
         </div>
       )}

@@ -85,6 +85,16 @@
 .Timeline--controls button {
   padding: 6px 18px;
   font-size: 1.4rem;
+  min-height: 50px;
+  min-width: 160px;
+  border: none;
+  line-height: 1;
+}
+.Timeline--controls button:not(:disabled) {
+  cursor: pointer;
+}
+.Timeline--controls button:disabled {
+  cursor: not-allowed;
 }
 
 .Timeline--controls button:first-of-type {
