@@ -46,3 +46,32 @@ export function getLastEventFinishTime(timeline: TimelineEvent[]) {
   const lastEventFinishTime = lastEvent.start + lastDuration;
   return lastEventFinishTime;
 }
+
+export function getTimelineFromTSV(tsv: string) {
+  const arrayStr = tsv
+    .split("\n")
+    .filter(Boolean)
+    .map((line) => {
+      const [start, ending, actionName] = line.split("\t");
+
+      if (start) {
+        return `
+          {
+            actionName: "${actionName}",
+            cast: "long",
+            ...getStartAndDuration("${start}", "${ending}"),
+          },
+        `.trim();
+      }
+
+      return `
+      {
+        actionName: "${actionName}",
+        cast: "instant",
+        start: getSecondsFromString("${ending}"),
+      },
+    `.trim();
+    });
+
+  return arrayStr;
+}

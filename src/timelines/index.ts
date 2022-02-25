@@ -1,4 +1,5 @@
 import { Job, TimelineBossEvent, TimelinePlayerEvent } from "../types";
+import * as P1S from "./P1S";
 import * as P2S from "./P2S";
 
 type Timeline = Record<
@@ -12,6 +13,14 @@ type Timeline = Record<
 >;
 
 export const Timelines: Timeline = {
+  [P1S.zoneID]: {
+    zoneID: P1S.zoneID,
+    zoneName: P1S.zoneName,
+    bossEvents: P1S.BossEvents,
+    playerEventsByJob: {
+      SCH: P1S.SCHEvents,
+    },
+  },
   [P2S.zoneID]: {
     zoneID: P2S.zoneID,
     zoneName: P2S.zoneName,
