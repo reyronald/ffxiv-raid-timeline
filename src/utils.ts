@@ -20,7 +20,7 @@ export function getStartAndDuration(startStr: string, endStr: string) {
 }
 
 export function eventId(event: TimelineEvent) {
-  return `${event.source}--${event.actionName}--${event.start}`;
+  return `${event.actionName}--${event.start}`;
 }
 
 export function getDuration(event: TimelineEvent) {
@@ -29,6 +29,10 @@ export function getDuration(event: TimelineEvent) {
 }
 
 export function getLastEventFinishTime(timeline: TimelineEvent[]) {
+  if (timeline.length === 0) {
+    return 0;
+  }
+
   const lastEvent = timeline.reduce((prev, current) => {
     const currentDuration = getDuration(current);
     const prevDuration = getDuration(prev);

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { WebSocketMessage } from "./types";
 
 export function useWebSocket() {
+  const [zoneID, setZoneID] = useState<number | null>(null);
   const [zoneName, setZoneName] = useState<string | null>(null);
   const [isCombatActive, setIsCombatActive] = useState(false);
 
@@ -25,6 +26,7 @@ export function useWebSocket() {
 
       if (parsed.msgtype === "ChangeZone") {
         console.log(parsed);
+        setZoneID(parsed.msg.zoneID);
         setZoneName(parsed.msg.zoneName);
       }
 
@@ -43,5 +45,5 @@ export function useWebSocket() {
     };
   }, []);
 
-  return { zoneName, isCombatActive };
+  return { zoneID, zoneName, isCombatActive };
 }

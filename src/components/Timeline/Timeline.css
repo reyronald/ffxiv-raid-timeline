@@ -1,0 +1,85 @@
+.Timeline {
+  --grid-cell-width: 90px;
+  --lastEventFinishTime: 0;
+
+  --timeline-width: calc(
+    var(--lastEventFinishTime) * var(--grid-cell-width) + 100vw
+  );
+}
+
+.Timeline--row {
+  outline: 1px solid gray;
+  padding: 15px 0;
+  display: flex;
+  height: 78px;
+  background-size: var(--grid-cell-width);
+  background-image: linear-gradient(to right, grey 2px, transparent 1px);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: var(--timeline-width);
+}
+
+.Timeline--boss {
+  align-items: end;
+}
+
+.Timeline--event-position {
+  --event-start: 0;
+
+  position: absolute;
+  left: calc(var(--event-start) * var(--grid-cell-width));
+}
+
+.Timeline--legend {
+  display: flex;
+  gap: var(--grid-cell-width);
+  width: var(--timeline-width);
+}
+
+.Timeline--legend > div:before {
+  content: attr(data-timestamp);
+  font-weight: bold;
+  position: absolute;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 100vw));
+  }
+}
+
+.Timeline--animation .Timeline--row,
+.Timeline--animation .Timeline--legend {
+  animation-name: slide;
+  animation-duration: calc(var(--lastEventFinishTime) * 1s);
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.Timeline--animation__paused .Timeline--row,
+.Timeline--animation__paused .Timeline--legend {
+  animation-play-state: paused;
+}
+
+.Timeline--controls {
+  margin-top: 32px;
+  padding: 0 32px;
+  position: fixed;
+}
+
+.Timeline--time-and-zone {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.Timeline--controls button {
+  padding: 6px 18px;
+  font-size: 1.4rem;
+}
+
+.Timeline--controls button:first-of-type {
+  margin-right: 24px;
+}

@@ -1,29 +1,27 @@
-export type TimelineEvent = {
+export type TimelinePlayerEvent = {
   actionName: string;
-} & (
+  type: "gcd" | "ogcd";
+  start: number;
+};
+
+export type TimelineBossEvent =
   | {
-      source: "player";
-      type: "gcd" | "ogcd";
-      start: number;
-    }
-  | {
-      source: "boss";
+      actionName: string;
       cast: "long";
       start: number;
       duration: number;
       tankBuster?: boolean;
     }
   | {
-      source: "boss";
+      actionName: string;
       cast: "instant";
       start: number;
       tankBuster?: boolean;
-    }
-);
+    };
 
-export type TimelinePlayerEvent = Extract<TimelineEvent, { source: "player" }>;
+export type TimelineEvent = TimelinePlayerEvent | TimelineBossEvent;
 
-export type TimelineBossEvent = Extract<TimelineEvent, { source: "boss" }>;
+export type Job = "SCH";
 
 export type XIVAPIResponse = {
   Pagination: {
