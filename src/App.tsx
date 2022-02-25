@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 import { Castbar } from "./components/Castbar/Castbar";
 import { PlayerAction } from "./components/PlayerAction/PlayerAction";
-import { P2STimeline } from "./timelines/P2S";
+import { P2STimeline, P2S_SCH } from "./timelines/P2S";
 import { useTimer } from "./useTimer";
 import { useToggler } from "./useToggler";
 import { useWebSocket } from "./useWebSocket";
@@ -51,7 +51,7 @@ function App() {
         }}
       >
         <div id="player-actions" className="timeline">
-          {P2STimeline.map(
+          {P2S_SCH.map(
             (event) =>
               event.source === "player" && (
                 <div

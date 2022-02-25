@@ -39,6 +39,7 @@ body.in-overlay {
 
 .legend > div:before {
   content: attr(data-timestamp);
+  font-weight: bold;
   position: absolute;
 }
 

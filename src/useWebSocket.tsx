@@ -24,6 +24,7 @@ export function useWebSocket() {
       // console.log(parsed);
 
       if (parsed.msgtype === "ChangeZone") {
+        console.log(parsed);
         setZoneName(parsed.msg.zoneName);
       }
 
@@ -33,7 +34,6 @@ export function useWebSocket() {
       }
 
       if (parsed.msgtype === "CombatData") {
-        console.log(parsed.msg.isActive);
         setIsCombatActive(parsed.msg.isActive === "true");
       }
     });
