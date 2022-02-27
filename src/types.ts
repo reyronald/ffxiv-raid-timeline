@@ -88,3 +88,15 @@ export type WebSocketMessage =
         };
       };
     };
+
+// https://xivapi.com/search?filters=ClassJob.ClassJobCategory.SCH=1,ClassJobCategory.SCH=1,ActionCategory.ID|=[2;4]&indexes=Action&columns=ID,Name,Description,Icon,Url,UrlType,Recast100ms,MaxCharges,ActionCategory.ID,ActionCategory.Name,ClassJobLevel
+/*
+    ID
+    Name
+    Description
+    Icon
+    Url
+    UrlType
+    Recast100ms
+    MaxCharges
+    */

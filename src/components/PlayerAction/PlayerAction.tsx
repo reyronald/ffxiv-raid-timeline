@@ -65,6 +65,7 @@ function useActionIcon(actionName: string) {
       )
         .then((r) => r.json())
         .then((response: XIVAPIResponse) => response.Results[0].Icon);
+
       iconCache.set(actionName, promise);
 
       promise.then((path: string) => setIcon(path));
