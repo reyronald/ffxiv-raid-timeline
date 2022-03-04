@@ -473,7 +473,6 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   {
     actionName: "Deployment Tactics",
-
     type: "ogcd",
     start: getSecondsFromString("4:34"),
   },
@@ -481,13 +480,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Dissipation
   {
     actionName: "Dissipation",
-
     type: "ogcd",
     start: getSecondsFromString("3:15"),
   },
   {
     actionName: "Dissipation",
-
     type: "ogcd",
     start: getSecondsFromString("6:16"),
   },
@@ -500,49 +497,41 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Whispering Dawn
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("0:40"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("1:57"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("3:12"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("4:20"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("5:35"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("7:40"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("8:50"),
   },
   {
     actionName: "Whispering Dawn",
-
     type: "ogcd",
     start: getSecondsFromString("9:53"),
   },
@@ -550,25 +539,21 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Protraction
   {
     actionName: "Protraction",
-
     type: "ogcd",
     start: getSecondsFromString("3:21"),
   },
   {
     actionName: "Protraction",
-
     type: "ogcd",
     start: getSecondsFromString("4:40"),
   },
   {
     actionName: "Protraction",
-
     type: "ogcd",
     start: getSecondsFromString("7:32"),
   },
   {
     actionName: "Protraction",
-
     type: "ogcd",
     start: getSecondsFromString("9:49"),
   },
@@ -576,43 +561,36 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Fey Blessing
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("1:40"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("2:43"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("3:52"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("5:21"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("7:25"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("8:42"),
   },
   {
     actionName: "Fey Blessing",
-
     type: "ogcd",
     start: getSecondsFromString("9:51"),
   },
@@ -620,33 +598,24 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Expedient
   {
     actionName: "Expedient",
-
     type: "ogcd",
     start: getSecondsFromString("0:33"),
   },
   {
     actionName: "Expedient",
-
     type: "ogcd",
     start: getSecondsFromString("3:32"),
   },
   {
     actionName: "Expedient",
-
-    type: "ogcd",
-    start: getSecondsFromString("4:46"),
-  },
-  {
-    actionName: "Expedient",
-
     type: "ogcd",
     start: getSecondsFromString("8:30"),
   },
 
+  // 3:54 -> 5:36
   // Summon Seraph
   {
     actionName: "Summon Seraph",
-
     type: "ogcd",
     start: getSecondsFromString("1:13"),
   },
@@ -664,31 +633,41 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   {
     actionName: "Summon Seraph",
-
+    type: "ogcd",
+    start: getSecondsFromString("4:42"),
+  },
+  {
+    actionName: "Consolation",
+    type: "ogcd",
+    start: getSecondsFromString("4:46"),
+  },
+  {
+    actionName: "Consolation",
+    type: "ogcd",
+    start: getSecondsFromString("5:02"),
+  },
+  {
+    actionName: "Summon Seraph",
     type: "ogcd",
     start: getSecondsFromString("7:36"),
   },
   {
     actionName: "Consolation",
-
     type: "ogcd",
     start: getSecondsFromString("7:38"),
   },
   {
     actionName: "Consolation",
-
     type: "ogcd",
     start: getSecondsFromString("7:55"),
   },
   {
     actionName: "Summon Seraph",
-
     type: "ogcd",
     start: getSecondsFromString("9:56"),
   },
   {
     actionName: "Consolation",
-
     type: "ogcd",
     start: getSecondsFromString("9:58"),
   },
@@ -702,19 +681,16 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Fey Illumination
   {
     actionName: "Fey Illumination",
-
     type: "ogcd",
     start: getSecondsFromString("1:50"),
   },
   {
     actionName: "Fey Illumination",
-
     type: "ogcd",
     start: getSecondsFromString("5:17"),
   },
   {
     actionName: "Fey Illumination",
-
     type: "ogcd",
     start: getSecondsFromString("8:28"),
   },
@@ -722,25 +698,21 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Recitation
   {
     actionName: "Recitation",
-
     type: "ogcd",
     start: getSecondsFromString("1:54"),
   },
   {
     actionName: "Recitation",
-
     type: "ogcd",
     start: getSecondsFromString("4:48"),
   },
   {
     actionName: "Recitation",
-
     type: "ogcd",
     start: getSecondsFromString("7:04"),
   },
   {
     actionName: "Recitation",
-
     type: "ogcd",
     start: getSecondsFromString("8:32"),
   },
@@ -748,25 +720,21 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Indomitability
   {
     actionName: "Indomitability",
-
     type: "ogcd",
     start: getSecondsFromString("2:03"),
   },
   {
     actionName: "Indomitability",
-
     type: "ogcd",
     start: getSecondsFromString("4:51"),
   },
   {
     actionName: "Indomitability",
-
     type: "ogcd",
     start: getSecondsFromString("7:10"),
   },
   {
     actionName: "Indomitability",
-
     type: "ogcd",
     start: getSecondsFromString("8:36"),
   },
@@ -774,7 +742,6 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Sacred Soil
   {
     actionName: "Sacred Soil",
-
     type: "ogcd",
     start: getSecondsFromString("7:16"),
   },
@@ -782,13 +749,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Surecast
   {
     actionName: "Surecast",
-
     type: "ogcd",
     start: getSecondsFromString("1:52"),
   },
   {
     actionName: "Surecast",
-
     type: "ogcd",
     start: getSecondsFromString("4:04"),
   },
@@ -796,13 +761,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Sprint
   {
     actionName: "Sprint",
-
     type: "ogcd",
     start: getSecondsFromString("4:08"),
   },
   {
     actionName: "Sprint",
-
     type: "ogcd",
     start: getSecondsFromString("8:24"),
   },
@@ -810,7 +773,6 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Place
   {
     actionName: "Place",
-
     type: "ogcd",
     start: getSecondsFromString("8:02"),
   },
@@ -818,13 +780,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // Potions
   {
     actionName: "Grade 6 Tincture of Mind",
-
     type: "ogcd",
     start: getSecondsFromString("4:32"),
   },
   {
     actionName: "Grade 6 Tincture of Mind",
-
     type: "ogcd",
     start: getSecondsFromString("9:04"),
   },
