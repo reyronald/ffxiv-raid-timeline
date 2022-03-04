@@ -23,7 +23,7 @@ export type TimelineEvent = TimelinePlayerEvent | TimelineBossEvent;
 
 export type Job = "SCH";
 
-export type XIVAPIResponse = {
+export type XIVAPISearchResponse<T> = {
   Pagination: {
     Page: number;
     PageNext: null | number;
@@ -33,12 +33,24 @@ export type XIVAPIResponse = {
     ResultsPerPage: number;
     ResultsTotal: number;
   };
-  Results: Array<{
-    ID: number;
-    Icon: string;
-    Name: string;
-  }>;
+  Results: Array<T>;
   SpeedMs: number;
+};
+
+export type ActionSearchResponse = {
+  ActionCategory: {
+    ID: number;
+    Name: string;
+  };
+  ClassJobLevel: number;
+  Description: string;
+  ID: number;
+  Icon: string;
+  MaxCharges: number;
+  Name: string;
+  Recast100ms: number;
+  Url: string;
+  UrlType: string;
 };
 
 // https://github.com/quisquous/cactbot/blob/main/docs/LogGuide.md#line-21-0x15-networkability
@@ -88,15 +100,3 @@ export type WebSocketMessage =
         };
       };
     };
-
-// https://xivapi.com/search?filters=ClassJob.ClassJobCategory.SCH=1,ClassJobCategory.SCH=1,ActionCategory.ID|=[2;4]&indexes=Action&columns=ID,Name,Description,Icon,Url,UrlType,Recast100ms,MaxCharges,ActionCategory.ID,ActionCategory.Name,ClassJobLevel
-/*
-    ID
-    Name
-    Description
-    Icon
-    Url
-    UrlType
-    Recast100ms
-    MaxCharges
-    */

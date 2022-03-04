@@ -25,6 +25,7 @@
   "dependencies": {
     "clsx": "^1.1.1",
     "format-duration": "^1.4.0",
+    "querystring": "^0.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

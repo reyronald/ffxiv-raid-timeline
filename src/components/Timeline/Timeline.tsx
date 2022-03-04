@@ -1,9 +1,15 @@
+import querystring from "querystring";
 import clsx from "clsx";
 import formatDuration from "format-duration";
 import { useState, useEffect } from "react";
-import { TimelinePlayerEvent, TimelineBossEvent } from "../../types";
+import {
+  TimelinePlayerEvent,
+  TimelineBossEvent,
+  XIVAPISearchResponse,
+  Job,
+  ActionSearchResponse,
+} from "../../types";
 import { useTimer } from "../../useTimer";
-import { useWebSocket } from "../../useWebSocket";
 import { eventId, getLastEventFinishTime } from "../../utils";
 import { Castbar } from "../Castbar/Castbar";
 import { PlayerAction } from "../PlayerAction/PlayerAction";
@@ -117,4 +123,32 @@ export function Timeline({
       )}
     </div>
   );
+}
+
+function useJobActions(job: Job) {
+  const [actions, setActions] =
+    useState<XIVAPISearchResponse<ActionSearchResponse> | null>(null);
+
+  useEffect(() => {
+    async function getActions(job: Job) {
+      const qs = querystring.stringify({
+        filters: [
+          `ClassJob.ClassJobCategory.${job}=1`,
+          `ClassJobCategory.${job}=1`,
+          "ActionCategory.ID|=[2;4]",
+        ].join(","),
+        indexes: "Action",
+        columns:
+          "ID,Name,Description,Icon,Url,UrlType,Recast100ms,MaxCharges,ActionCategory.ID,ActionCategory.Name,ClassJobLevel",
+      });
+      const response = await fetch(`https://xivapi.com/search?${qs}`);
+      const body: XIVAPISearchResponse<ActionSearchResponse> =
+        await response.json();
+      setActions(body);
+    }
+
+    getActions(job);
+  }, []);
+
+  return actions;
 }

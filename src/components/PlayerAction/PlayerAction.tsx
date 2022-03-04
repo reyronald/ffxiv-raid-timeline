@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { TimelinePlayerEvent, XIVAPIResponse } from "../../types";
+import { TimelinePlayerEvent, XIVAPISearchResponse } from "../../types";
 
 import "./PlayerAction.css";
 
@@ -64,7 +64,15 @@ function useActionIcon(actionName: string) {
         `https://xivapi.com/search?indexes=Action,Item&string=${actionName}`
       )
         .then((r) => r.json())
-        .then((response: XIVAPIResponse) => response.Results[0].Icon);
+        .then(
+          (
+            response: XIVAPISearchResponse<{
+              ID: number;
+              Icon: string;
+              Name: string;
+            }>
+          ) => response.Results[0].Icon
+        );
 
       iconCache.set(actionName, promise);
 
