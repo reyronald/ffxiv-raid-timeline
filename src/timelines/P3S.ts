@@ -13,6 +13,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     cast: "long",
+    tankBuster: true,
     ...getStartAndDuration("0:17", "0:24"),
   },
   {
@@ -39,6 +40,11 @@ export const BossEvents: TimelineBossEvent[] = [
     actionName: "Brightened Fire",
     cast: "instant",
     start: getSecondsFromString("1:10"),
+  },
+  {
+    actionName: "Brightened Fire",
+    cast: "instant",
+    start: getSecondsFromString("1:11"),
   },
   {
     actionName: "Brightened Fire",
@@ -73,6 +79,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     cast: "long",
+    tankBuster: true,
     ...getStartAndDuration("1:30", "1:38"),
   },
   {
@@ -108,6 +115,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     cast: "long",
+    tankBuster: true,
     ...getStartAndDuration("2:23", "2:30"),
   },
   {
@@ -167,4 +175,131 @@ export const BossEvents: TimelineBossEvent[] = [
   },
 ];
 
-export const SCHEvents: TimelinePlayerEvent[] = [];
+export const SCHEvents: TimelinePlayerEvent[] = [
+  // Biolysis
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("0:01"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("0:31"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("1:01"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("1:31"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("2:01"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("2:31"),
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    start: getSecondsFromString("3:01"),
+  },
+
+  // Sprint
+  {
+    actionName: "Sprint",
+    type: "ogcd",
+    start: getSecondsFromString("0:30"),
+  },
+  {
+    actionName: "Sprint",
+    type: "ogcd",
+    start: getSecondsFromString("2:34"),
+  },
+
+  // Protraction
+  {
+    actionName: "Protraction",
+    type: "ogcd",
+    start: getSecondsFromString("0:20"),
+  },
+  {
+    actionName: "Protraction",
+    type: "ogcd",
+    start: getSecondsFromString("1:34"),
+  },
+  {
+    actionName: "Protraction",
+    type: "ogcd",
+    start: getSecondsFromString("2:26"),
+  },
+
+  // Expedient
+  {
+    actionName: "Expedient",
+    type: "ogcd",
+    start: getSecondsFromString("1:02"),
+  },
+
+  // Fey Blessing
+  {
+    actionName: "Fey Blessing",
+    type: "ogcd",
+    start: getSecondsFromString("1:13"),
+  },
+
+  // Recitation
+  {
+    actionName: "Recitation",
+    type: "ogcd",
+    start: getSecondsFromString("1:37"),
+  },
+
+  // Indomitability
+  {
+    actionName: "Indomitability",
+    type: "ogcd",
+    start: getSecondsFromString("1:46"),
+  },
+
+  // Fey Illumination
+  {
+    actionName: "Fey Illumination",
+    type: "ogcd",
+    start: getSecondsFromString("2:47"),
+  },
+
+  // Whispering Dawn
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    start: getSecondsFromString("2:50"),
+  },
+
+  // Summon Seraph
+  {
+    actionName: "Summon Seraph",
+    type: "ogcd",
+    start: getSecondsFromString("2:53"),
+  },
+  {
+    actionName: "Consolation",
+
+    type: "ogcd",
+    start: getSecondsFromString("2:56"),
+  },
+  {
+    actionName: "Consolation",
+
+    type: "ogcd",
+    start: getSecondsFromString("3:12"),
+  },
+];
