@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Timeline } from "./components/Timeline/Timeline";
 import { useWebSocket } from "./useWebSocket";
 import { getTimeline } from "./timelines";
+import * as P3S from "./timelines/P3S";
 import * as P1S from "./timelines/P1S";
 import * as P2S from "./timelines/P2S";
 
@@ -16,13 +17,14 @@ if (overlay) {
   document.body.classList.add("in-overlay");
 }
 
-const defaultZone = P2S.zoneID;
+const defaultZone = P3S.zoneID;
 
 function App() {
   const { zoneID, zoneName: zoneNameFromACT, isCombatActive } = useWebSocket();
 
-  const resolvedZoneID =
-    zoneID || Number.parseInt(params.get("zoneID") || "0", 10) || defaultZone;
+  const resolvedZoneID = overlay
+    ? zoneID
+    : Number.parseInt(params.get("zoneID") || "0", 10) || defaultZone;
 
   const {
     zoneName: zoneNameFromStore,

@@ -17,6 +17,7 @@ export function PlayerAction({ event }: Props) {
         "PlayerAction",
         event.type === "ogcd" && "PlayerAction--ogcd"
       )}
+      title={iconUrl ? undefined : event.actionName}
     >
       {iconUrl && (
         <img
