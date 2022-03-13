@@ -305,7 +305,7 @@ export const BossEvents: TimelineBossEvent[] = [
   // End
   {
     actionName: "Devouring Brand",
-    timestamp: ["9:41", "9:53"],
+    timestamp: ["9:51", "9:53"],
   },
   {
     actionName: "Experimental Fireplume",
@@ -394,7 +394,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
 
   // Sacred Soil
   {
-    actionName: "Sacred Soil",
+    actionName: "Sacred Soil (needed?)",
     type: "ogcd",
     timestamp: ["3:25"],
   },
@@ -403,10 +403,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "ogcd",
     timestamp: ["4:18"],
   },
+
+  // Swiftcast
   {
-    actionName: "Sacred Soil",
+    actionName: "Swiftcast",
     type: "ogcd",
-    timestamp: ["6:29"],
+    timestamp: ["6:24"],
   },
 
   // Succor
@@ -424,6 +426,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Succor",
     type: "gcd",
     timestamp: ["4:22"],
+  },
+  {
+    actionName: "Succor",
+    type: "gcd",
+    timestamp: ["6:25"],
   },
 
   // Sprint
@@ -530,6 +537,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "ogcd",
     timestamp: ["3:40"],
   },
+  //  5:10 -> 7:20
   {
     actionName: "Recitation",
     type: "ogcd",
@@ -574,11 +582,15 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "ogcd",
     timestamp: ["3:36"],
   },
-  // todo 5:36 -> 735
+  {
+    actionName: "Fey Illumination", // possibly not needed ?
+    type: "ogcd",
+    timestamp: ["5:37"],
+  },
   {
     actionName: "Fey Illumination",
     type: "ogcd",
-    timestamp: ["7:35"],
+    timestamp: ["7:38"],
   },
 
   // Whispering Dawn
@@ -590,12 +602,32 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
+    timestamp: ["2:41"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
     timestamp: ["3:49"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
+    timestamp: ["5:27"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["6:30"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
     timestamp: ["7:54"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["9:44"],
   },
 
   // Summon Seraph
@@ -684,14 +716,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     timestamp: ["3:11"],
   },
 
-  // Adloquium
+  // Adloquium + Deployment Tactics
   {
     actionName: "Adloquium",
     type: "gcd",
     timestamp: ["2:53"],
   },
-
-  // Deployment Tactics
   {
     actionName: "Deployment Tactics",
     type: "ogcd",
@@ -703,6 +733,26 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Chain Stratagem",
     type: "ogcd",
     timestamp: ["2:11"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["4:23"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["6:32"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["8:34"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["10:38"],
   },
 
   // Energy Drain
@@ -774,6 +824,23 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Place",
     type: "ogcd",
     timestamp: ["3:45"],
+  },
+  {
+    actionName: "Place",
+    type: "ogcd",
+    timestamp: ["6:41"],
+  },
+
+  // Potions
+  {
+    actionName: "Grade 6 Tincture of Mind",
+    type: "ogcd",
+    timestamp: ["4:32"],
+  },
+  {
+    actionName: "Grade 6 Tincture of Mind",
+    type: "ogcd",
+    timestamp: ["10:04"],
   },
 
   // {

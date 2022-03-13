@@ -63,6 +63,11 @@ function useActionIcon(actionName: string) {
       const path = "/i/000000/000869.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
+    } else if (actionName === "Swiftcast") {
+      // https://xivapi.com/i/000000/000866.png
+      const path = "/i/000000/000866.png";
+      setIcon(path);
+      iconCache.set(actionName, Promise.resolve(path));
     } else {
       // e.g. https://xivapi.com/search?indexes=Action,Item&string=Expedient
       const promise = fetch(
