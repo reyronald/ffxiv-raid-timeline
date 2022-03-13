@@ -1,29 +1,26 @@
 export type TimelinePlayerEvent = {
   actionName: string;
   type: "gcd" | "ogcd";
-  start: number;
+  timestamp: [number | string];
 };
 
-export type TimelineBossEvent =
-  | {
-      actionName: string;
-      cast: "long";
-      start: number;
-      duration: number;
-      tankBuster?: boolean;
-    }
-  | {
-      actionName: string;
-      cast: "instant";
-      start: number;
-      tankBuster?: boolean;
-    };
+export type TimelineBossEvent = {
+  actionName: string;
+  timestamp:
+    | number
+    | [number]
+    | [number, number]
+    | string
+    | [string]
+    | [string, string];
+  tankBuster?: boolean;
+};
 
 export type TimelineEvent = TimelinePlayerEvent | TimelineBossEvent;
 
 export type Job = "SCH";
 
-export type XIVAPISearchResponse<T> = {
+export type XIVAPISearchSuccessResponse<T> = {
   Pagination: {
     Page: number;
     PageNext: null | number;
@@ -36,6 +33,21 @@ export type XIVAPISearchResponse<T> = {
   Results: Array<T>;
   SpeedMs: number;
 };
+
+export type XIVAPISearchErrorResponse = {
+  Error: true;
+  Ex: string;
+  ExCode: number;
+  Hash: string;
+  Message: string;
+  Note: string;
+  Subject: string;
+  Url: string;
+};
+
+export type XIVAPISearchResponse<T> =
+  | XIVAPISearchSuccessResponse<T>
+  | XIVAPISearchErrorResponse;
 
 export type ActionSearchResponse = {
   ActionCategory: {

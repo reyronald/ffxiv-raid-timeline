@@ -3,6 +3,8 @@ import * as P1S from "./P1S";
 import * as P2S from "./P2S";
 import * as P3S from "./P3S";
 
+export const TimelineObjects = { P1S, P2S, P3S };
+
 type Timeline = Record<
   number,
   {

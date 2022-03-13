@@ -12,20 +12,48 @@ export function getSecondsFromString(durationStr: string) {
   throw new Error("Could not parse " + durationStr);
 }
 
-export function getStartAndDuration(startStr: string, endStr: string) {
-  const start = getSecondsFromString(startStr);
-  const end = getSecondsFromString(endStr);
-  const duration = end - start;
-  return { start, duration };
-}
-
 export function eventId(event: TimelineEvent) {
-  return `${event.actionName}--${event.start}`;
+  const start = Array.isArray(event.timestamp)
+    ? event.timestamp[0]
+    : event.timestamp;
+  return `${event.actionName}--${start}`;
 }
 
 export function getDuration(event: TimelineEvent) {
-  const eventDuration = "duration" in event ? event.duration : 0;
-  return eventDuration;
+  if (Array.isArray(event.timestamp)) {
+    const [startInput, endInput] = event.timestamp;
+
+    const start =
+      typeof startInput === "number"
+        ? startInput
+        : typeof startInput === "string"
+        ? getSecondsFromString(startInput)
+        : 0;
+
+    const end =
+      typeof endInput === "number"
+        ? endInput
+        : typeof endInput === "string"
+        ? getSecondsFromString(endInput)
+        : 0;
+
+    return end - start;
+  }
+
+  return 0;
+}
+
+export function getStart(event: TimelineEvent) {
+  const start = Array.isArray(event.timestamp)
+    ? event.timestamp[0]
+    : event.timestamp;
+
+  if (typeof start === "number") {
+    return start;
+  }
+
+  const startSeconds = getSecondsFromString(start);
+  return startSeconds;
 }
 
 export function getLastEventFinishTime(timeline: TimelineEvent[]) {
@@ -35,15 +63,20 @@ export function getLastEventFinishTime(timeline: TimelineEvent[]) {
 
   const lastEvent = timeline.reduce((prev, current) => {
     const currentDuration = getDuration(current);
+    const currentStart = getStart(current);
     const prevDuration = getDuration(prev);
-    if (current.start + currentDuration > prev.start + prevDuration) {
+    const prevStart = getStart(prev);
+
+    if (currentStart + currentDuration > prevStart + prevDuration) {
       return current;
     }
     return prev;
   });
 
+  const lastEventStart = getStart(lastEvent);
+
   const lastDuration = getDuration(lastEvent);
-  const lastEventFinishTime = lastEvent.start + lastDuration;
+  const lastEventFinishTime = lastEventStart + lastDuration;
   return lastEventFinishTime;
 }
 

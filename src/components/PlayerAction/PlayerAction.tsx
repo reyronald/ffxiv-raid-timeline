@@ -1,6 +1,10 @@
 import clsx from "clsx";
 import { useEffect, useState } from "react";
-import { TimelinePlayerEvent, XIVAPISearchResponse } from "../../types";
+import {
+  TimelinePlayerEvent,
+  XIVAPISearchResponse,
+  XIVAPISearchSuccessResponse,
+} from "../../types";
 
 import "./PlayerAction.css";
 
@@ -72,7 +76,24 @@ function useActionIcon(actionName: string) {
               Icon: string;
               Name: string;
             }>
-          ) => response.Results[0].Icon
+          ) => {
+            if ("Error" in response && response.Error) {
+              console.log(response);
+              return "";
+            }
+
+            if ("Results" in response) {
+              if (response.Results[0]) {
+                return response.Results[0].Icon;
+              }
+              console.info(`Got no results XIVAPI results for "${actionName}"`);
+              return "";
+            }
+
+            console.error(response);
+
+            throw new Error("Error getting response from XIVApi");
+          }
         );
 
       iconCache.set(actionName, promise);

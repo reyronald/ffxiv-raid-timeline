@@ -5,12 +5,12 @@ import { useState, useEffect } from "react";
 import {
   TimelinePlayerEvent,
   TimelineBossEvent,
-  XIVAPISearchResponse,
+  XIVAPISearchSuccessResponse,
   Job,
   ActionSearchResponse,
 } from "../../types";
 import { useTimer } from "../../useTimer";
-import { eventId, getLastEventFinishTime } from "../../utils";
+import { eventId, getLastEventFinishTime, getStart } from "../../utils";
 import { Castbar } from "../Castbar/Castbar";
 import { PlayerAction } from "../PlayerAction/PlayerAction";
 
@@ -69,7 +69,7 @@ export function Timeline({
             key={eventId(event)}
             className="Timeline--event-position"
             style={{
-              ["--event-start" as any]: event.start,
+              ["--event-start" as any]: getStart(event),
             }}
           >
             <PlayerAction key={eventId(event)} event={event} />
@@ -83,7 +83,7 @@ export function Timeline({
             key={eventId(event)}
             className="Timeline--event-position"
             style={{
-              ["--event-start" as any]: event.start,
+              ["--event-start" as any]: getStart(event),
             }}
           >
             <Castbar event={event} />
@@ -127,7 +127,7 @@ export function Timeline({
 
 function useJobActions(job: Job) {
   const [actions, setActions] =
-    useState<XIVAPISearchResponse<ActionSearchResponse> | null>(null);
+    useState<XIVAPISearchSuccessResponse<ActionSearchResponse> | null>(null);
 
   useEffect(() => {
     async function getActions(job: Job) {
@@ -142,7 +142,7 @@ function useJobActions(job: Job) {
           "ID,Name,Description,Icon,Url,UrlType,Recast100ms,MaxCharges,ActionCategory.ID,ActionCategory.Name,ClassJobLevel",
       });
       const response = await fetch(`https://xivapi.com/search?${qs}`);
-      const body: XIVAPISearchResponse<ActionSearchResponse> =
+      const body: XIVAPISearchSuccessResponse<ActionSearchResponse> =
         await response.json();
       setActions(body);
     }
