@@ -155,179 +155,183 @@ export const BossEvents: TimelineBossEvent[] = [
   },
   {
     actionName: "Heat of Condemnation",
-    timestamp: ["4:45", "4:50"],
+    timestamp: ["4:50", "4:55"],
     tankBuster: true,
   },
   {
     actionName: "Fledgling Flight (teeth)",
-    timestamp: ["4:59", "5:01"],
+    timestamp: ["5:04", "5:06"],
   },
   {
     actionName: "(markers appear)",
-    timestamp: ["5:04", "5:10"],
+    timestamp: ["5:09", "5:15"],
   },
   {
     actionName: "Ashen Eye",
-    timestamp: ["5:15", "5:18"],
+    timestamp: ["5:16", "5:19"],
   },
   {
     actionName: "Experimental Gloryplume",
-    timestamp: ["5:24", "5:28"],
+    timestamp: ["5:29", "5:33"],
+  },
+  {
+    actionName: "Ashplume",
+    timestamp: ["5:47"],
   },
   {
     actionName: "Fountain of Fire",
-    timestamp: ["5:54", "6:00"],
+    timestamp: ["5:59", "6:05"],
   },
   {
     actionName: "Scorched Exaltation",
-    timestamp: ["6:26", "6:31"],
+    timestamp: ["6:31", "6:36"],
   },
   {
     actionName: "Scorched Exaltation",
-    timestamp: ["6:33", "6:38"],
+    timestamp: ["6:38", "6:43"],
   },
   {
     actionName: "Heat of Condemnation",
-    timestamp: ["6:44", "6:49"],
+    timestamp: ["6:49", "6:54"],
     tankBuster: true,
   },
 
   // Firestorms (nados)
   {
     actionName: "Firestorms of Asphodelos (big damage)",
-    timestamp: ["6:59", "7:04"],
+    timestamp: ["7:04", "7:09"],
   },
   {
     actionName: "Flames of Asphodelos (pizza)",
-    timestamp: ["7:07", "7:10"],
+    timestamp: ["7:12", "7:15"],
   },
   {
     actionName: "Experimental Ashplume",
-    timestamp: ["7:12", "7:17"],
+    timestamp: ["7:17", "7:22"],
   },
   {
     actionName: "Flames #1 (slice)",
-    timestamp: ["7:18"],
+    timestamp: ["7:23"],
   },
   {
     actionName: "Ashplume",
-    timestamp: ["7:24"],
+    timestamp: ["7:29"],
   },
   {
     actionName: "Flames of Asphodelos (pizza)",
-    timestamp: ["7:26", "7:28"],
+    timestamp: ["7:31", "7:33"],
   },
   {
     actionName: "Flames #2 (slice)",
-    timestamp: ["7:36"],
+    timestamp: ["7:41"],
   },
   {
     actionName: "Storms of Asphodelos (nados bait)",
-    timestamp: ["7:39", "7:47"],
+    timestamp: ["7:44", "7:52"],
   },
   {
     actionName: "Darkblaze Twister",
-    timestamp: ["7:49", "7:52"],
+    timestamp: ["7:54", "7:57"],
   },
   {
     actionName: "Searing Breeze",
-    timestamp: ["7:57", "7:59"],
+    timestamp: ["8:02", "8:04"],
   },
   {
     actionName: "Breeze #1",
-    timestamp: ["8:00"],
+    timestamp: ["8:05"],
   },
   {
     actionName: "Breeze #2",
-    timestamp: ["8:02"],
+    timestamp: ["8:07"],
   },
 
   {
     actionName: "Experimental Ashplume",
-    timestamp: ["8:04", "8:09"],
+    timestamp: ["8:09", "8:14"],
   },
   {
     actionName: "Dark Twister",
-    timestamp: ["8:12"],
-  },
-  {
-    actionName: "Burning Twister",
-    timestamp: ["8:14"],
-  },
-  {
-    actionName: "Ashplume",
     timestamp: ["8:17"],
   },
   {
+    actionName: "Burning Twister",
+    timestamp: ["8:19"],
+  },
+  {
+    actionName: "Ashplume",
+    timestamp: ["8:22"],
+  },
+  {
     actionName: "Scorched Exaltation",
-    timestamp: ["8:18", "8:23"],
+    timestamp: ["8:23", "8:29"],
   },
 
   {
     actionName: "Blazing Rain",
-    timestamp: ["7:15"],
+    timestamp: ["7:20"],
   },
   {
     actionName: "Blazing Rain",
-    timestamp: ["7:21"],
+    timestamp: ["7:26"],
   },
   {
     actionName: "Blazing Rain",
-    timestamp: ["7:31"],
+    timestamp: ["7:36"],
   },
 
   // Post-Firestorms
   {
     actionName: "Death's Toll",
-    timestamp: ["8:30", "8:36"],
+    timestamp: ["8:35", "8:41"],
   },
   {
     actionName: "Fledgling Flight",
-    timestamp: ["8:40", "8:42"],
+    timestamp: ["8:45", "8:47"],
   },
   {
     actionName: "Life's Agonies",
-    timestamp: ["8:45", "9:08"],
+    timestamp: ["8:50", "9:13"],
   },
   {
     actionName: "Experimental Gloryplume",
-    timestamp: ["9:16", "9:21"],
+    timestamp: ["9:21", "9:26"],
   },
   {
     actionName: "Ashplume",
-    timestamp: ["9:29"],
+    timestamp: ["9:34"],
   },
   {
     actionName: "Trail of Condemnation",
-    timestamp: ["9:35", "9:41"],
+    timestamp: ["9:40", "9:46"],
   },
 
   // End
   {
     actionName: "Devouring Brand",
-    timestamp: ["9:51", "9:53"],
+    timestamp: ["9:56", "9:58"],
   },
   {
     actionName: "Experimental Fireplume",
-    timestamp: ["9:56", "10:00"],
+    timestamp: ["10:01", "10:05"],
   },
   {
     actionName: "Searing Breeze",
-    timestamp: ["10:08", "10:11"],
+    timestamp: ["10:13", "10:16"],
   },
   {
     actionName: "Scorched Exaltation",
-    timestamp: ["10:26", "10:30"],
+    timestamp: ["10:31", "10:35"],
   },
   {
     actionName: "Scorched Exaltation",
-    timestamp: ["10:33", "10:37"],
+    timestamp: ["10:38", "10:42"],
   },
 
   // Enrage
   {
     actionName: "Final Exaltation (ENRAGE)",
-    timestamp: ["10:40", "10:50"],
+    timestamp: ["10:45", "10:55"],
   },
 ];
 
@@ -336,38 +340,38 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["0:02"],
+    timestamp: ["0:00"],
   },
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["0:32"],
+    timestamp: ["0:30"],
   },
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["1:02"],
+    timestamp: ["1:00"],
   },
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["1:32"],
+    timestamp: ["1:30"],
   },
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["2:02"],
+    timestamp: ["2:00"],
   },
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["2:32"],
+    timestamp: ["2:30"],
   },
   // No biolysis at 3:02 because of adds downtime
   {
     actionName: "Biolysis",
     type: "gcd",
-    timestamp: ["3:31"],
+    timestamp: ["3:30"],
   },
 
   // Dissipation
@@ -389,12 +393,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Dissipation",
     type: "ogcd",
-    timestamp: ["9:06"],
+    timestamp: ["9:11"],
   },
 
   // Sacred Soil
   {
-    actionName: "Sacred Soil (needed?)",
+    actionName: "Sacred Soil",
     type: "ogcd",
     timestamp: ["3:25"],
   },
@@ -408,7 +412,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Swiftcast",
     type: "ogcd",
-    timestamp: ["6:24"],
+    timestamp: ["2:32"],
+  },
+  {
+    actionName: "Swiftcast",
+    type: "ogcd",
+    timestamp: ["6:29"],
   },
 
   // Succor
@@ -430,7 +439,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Succor",
     type: "gcd",
-    timestamp: ["6:25"],
+    timestamp: ["6:30"],
   },
 
   // Sprint
@@ -442,7 +451,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Sprint",
     type: "ogcd",
-    timestamp: ["2:36"],
+    timestamp: ["2:31"],
   },
 
   // Protraction
@@ -469,7 +478,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Protraction",
     type: "ogcd",
-    timestamp: ["6:46"],
+    timestamp: ["6:51"],
   },
 
   // Expedient
@@ -486,17 +495,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["5:26"],
+    timestamp: ["5:31"],
   },
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["8:10"],
+    timestamp: ["8:15"],
   },
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["10:20"],
+    timestamp: ["10:25"],
   },
 
   // Fey Blessing
@@ -513,17 +522,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["5:42"],
+    timestamp: ["5:47"],
   },
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["7:50"],
+    timestamp: ["7:26"],
   },
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["9:03"],
+    timestamp: ["9:08"],
   },
 
   // Recitation
@@ -541,12 +550,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["8:50"],
+    timestamp: ["8:55"],
   },
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["10:24"],
+    timestamp: ["10:29"],
   },
 
   // Indomitability
@@ -563,12 +572,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Indomitability",
     type: "ogcd",
-    timestamp: ["9:00"],
+    timestamp: ["9:05"],
   },
   {
     actionName: "Indomitability",
     type: "ogcd",
-    timestamp: ["10:31"],
+    timestamp: ["10:36"],
   },
 
   // Fey Illumination
@@ -585,12 +594,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Fey Illumination", // possibly not needed ?
     type: "ogcd",
-    timestamp: ["5:37"],
+    timestamp: ["5:42"],
   },
   {
     actionName: "Fey Illumination",
     type: "ogcd",
-    timestamp: ["7:38"],
+    timestamp: ["7:43"],
   },
 
   // Whispering Dawn
@@ -612,29 +621,29 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["5:27"],
+    timestamp: ["5:32"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["6:30"],
+    timestamp: ["6:35"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["7:54"],
+    timestamp: ["7:59"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["9:44"],
+    timestamp: ["9:49"],
   },
 
   // Summon Seraph
   {
     actionName: "Summon Seraph",
     type: "ogcd",
-    timestamp: ["2:39"],
+    timestamp: ["2:34"],
   },
   {
     actionName: "Consolation",
@@ -666,33 +675,33 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Summon Seraph",
     type: "ogcd",
-    timestamp: ["6:59"],
+    timestamp: ["7:04"],
   },
   {
     actionName: "Consolation",
     type: "ogcd",
-    timestamp: ["7:02"],
+    timestamp: ["7:07"],
   },
   {
     actionName: "Consolation",
     type: "ogcd",
-    timestamp: ["7:13"],
+    timestamp: ["7:18"],
   },
 
   {
-    actionName: "Summon Seraph (needed?)",
+    actionName: "Summon Seraph",
     type: "ogcd",
-    timestamp: ["9:19"],
+    timestamp: ["9:24"],
   },
   {
-    actionName: "Consolation (needed?)",
+    actionName: "Consolation",
     type: "ogcd",
-    timestamp: ["9:22"],
+    timestamp: ["9:27"],
   },
   {
-    actionName: "Consolation (needed?)",
+    actionName: "Consolation",
     type: "ogcd",
-    timestamp: ["9:32"],
+    timestamp: ["9:37"],
   },
 
   // Fey Union
@@ -828,7 +837,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Place",
     type: "ogcd",
-    timestamp: ["6:41"],
+    timestamp: ["6:46"],
   },
 
   // Potions
