@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "open": "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --new-window --app=http://localhost:3777",
     "preview": "vite preview"
   },
   "dependencies": {

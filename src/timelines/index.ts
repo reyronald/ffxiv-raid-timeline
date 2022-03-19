@@ -2,8 +2,9 @@ import { Job, TimelineBossEvent, TimelinePlayerEvent } from "../types";
 import * as P1S from "./P1S";
 import * as P2S from "./P2S";
 import * as P3S from "./P3S";
+import * as P4S from "./P4S";
 
-export const TimelineObjects = { P1S, P2S, P3S };
+export const TimelineObjects = { P1S, P2S, P3S, P4S };
 
 type Timeline = Record<
   number,
@@ -38,6 +39,14 @@ export const Timelines: Timeline = {
     bossEvents: P3S.BossEvents,
     playerEventsByJob: {
       SCH: P3S.SCHEvents,
+    },
+  },
+  [P4S.zoneID]: {
+    zoneID: P4S.zoneID,
+    zoneName: P4S.zoneName,
+    bossEvents: P4S.BossEvents,
+    playerEventsByJob: {
+      SCH: P4S.SCHEvents,
     },
   },
 };
