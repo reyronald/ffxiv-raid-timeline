@@ -391,6 +391,25 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   // #endregion Dissipation
 
+  // #region Chain Stratagem
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["2:08"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["4:36"],
+  },
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["7:49"],
+  },
+  // #endregion
+
+  // TODO complete
   // #region Protraction
   {
     actionName: "Protraction",
@@ -404,11 +423,21 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   // #endregion Protraction
 
+  // TODO complete
+  // #region Fey Illumination
+  // #endregion
+
+  // TODO complete
   // #region Whispering Dawn
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
     timestamp: ["1:06"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["6:53"],
   },
   // #endregion Whispering Dawn
 
@@ -422,6 +451,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Expedient",
     type: "ogcd",
     timestamp: ["4:12"],
+  },
+  {
+    actionName: "Expedient",
+    type: "ogcd",
+    timestamp: ["7:51"],
   },
   // #endregion Expedient
 
@@ -440,7 +474,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["4:17"],
+    timestamp: ["4:06"],
   },
   {
     actionName: "Indomitability",
@@ -531,7 +565,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "ogcd",
     timestamp: ["7:05"],
   },
-  // #region Fey Blessing
+  // #endregion Fey Blessing
 
   // #region Excogitation
   {
@@ -560,7 +594,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Sacred Soil",
     type: "ogcd",
-    timestamp: ["8:03"],
+    timestamp: ["7:57"],
   },
   // #endregion
 
@@ -589,12 +623,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Adloquium",
     type: "ogcd",
-    timestamp: ["6:28"],
+    timestamp: ["6:18"],
   },
   {
     actionName: "Deployment Tactics",
     type: "ogcd",
-    timestamp: ["6:31"],
+    timestamp: ["6:22"],
   },
   // #endregion
 
@@ -602,7 +636,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Sprint",
     type: "ogcd",
-    timestamp: ["6:14"],
+    timestamp: ["2:42"],
   },
 
   // Place
@@ -610,5 +644,29 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Place",
     type: "ogcd",
     timestamp: ["0:43"],
+  },
+  {
+    actionName: "Place",
+    type: "ogcd",
+    timestamp: ["3:48"],
+  },
+  {
+    actionName: "Place",
+    type: "ogcd",
+    timestamp: ["6:40"],
+  },
+
+  // Surecast
+  {
+    actionName: "Surecast",
+    type: "ogcd",
+    timestamp: ["2:41"],
+  },
+
+  // Potions
+  {
+    actionName: "Grade 6 Tincture of Mind",
+    type: "ogcd",
+    timestamp: ["7:46"],
   },
 ];
