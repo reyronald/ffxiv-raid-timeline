@@ -1,6 +1,6 @@
 import { TimelineBossEvent, TimelinePlayerEvent } from "../types";
 
-export const zoneID = 9999;
+export const zoneID = 1009;
 export const zoneName = "Asphodelos: The Fourth Circle (Savage)";
 
 export const BossEvents: TimelineBossEvent[] = [
@@ -227,6 +227,7 @@ export const BossEvents: TimelineBossEvent[] = [
   },
 ];
 
+// https://xivanalysis.com/fflogs/9aLnf76zrcJXPFjZ/16/7
 export const SCHEvents: TimelinePlayerEvent[] = [
   // #region Biolysis
   {
@@ -259,6 +260,46 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "gcd",
     timestamp: ["2:30"],
   },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["3:00"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["3:30"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["4:00"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["4:30"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["5:00"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["5:30"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["6:00"],
+  },
+  {
+    actionName: "Biolysis",
+    type: "gcd",
+    timestamp: ["6:30"],
+  },
   // #endregion Biolysis
 
   // #region Dissipation
@@ -270,17 +311,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Dissipation",
     type: "ogcd",
-    timestamp: ["3:01"],
+    timestamp: ["3:03"],
   },
   {
     actionName: "Dissipation",
     type: "ogcd",
     timestamp: ["6:06"],
-  },
-  {
-    actionName: "Dissipation",
-    type: "ogcd",
-    timestamp: ["9:01"],
   },
   // #endregion Dissipation
 
@@ -293,7 +329,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["3:20"],
+    timestamp: ["3:33"],
   },
   {
     actionName: "Expedient",
@@ -302,18 +338,23 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   // #endregion Expedient
 
-  // #region Fey Illumination (120s cooldown)
+  // #region Fey Illumination 120s cooldown
   {
     actionName: "Fey Illumination",
     type: "ogcd",
-    timestamp: ["3:25"],
+    timestamp: ["0:51"],
   },
   {
     actionName: "Fey Illumination",
     type: "ogcd",
-    timestamp: ["6:03"],
+    timestamp: ["3:39"],
   },
-  // #endregion Expedient
+  {
+    actionName: "Fey Illumination",
+    type: "ogcd",
+    timestamp: ["6:04"],
+  },
+  // #endregion
 
   // #region Seraph (120s cooldown)
   {
@@ -335,17 +376,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Summon Seraph",
     type: "ogcd",
+    timestamp: ["3:44"],
+  },
+  {
+    actionName: "Consolation",
+    type: "ogcd",
+    timestamp: ["3:47"],
+  },
+  {
+    actionName: "Consolation",
+    type: "ogcd",
     timestamp: ["3:55"],
-  },
-  {
-    actionName: "Consolation",
-    type: "ogcd",
-    timestamp: ["3:59"],
-  },
-  {
-    actionName: "Consolation",
-    type: "ogcd",
-    timestamp: ["4:07"],
   },
 
   {
@@ -388,9 +429,24 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     type: "ogcd",
     timestamp: ["1:17"],
   },
+  {
+    actionName: "Protraction",
+    type: "ogcd",
+    timestamp: ["2:31"],
+  },
+  {
+    actionName: "Protraction",
+    type: "ogcd",
+    timestamp: ["5:27"],
+  },
   // #endregion Protraction
 
   // #region Fey Blessing
+  {
+    actionName: "Fey Blessing",
+    type: "ogcd",
+    timestamp: ["0:40"],
+  },
   {
     actionName: "Fey Blessing",
     type: "ogcd",
@@ -399,12 +455,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["5:17"],
+    timestamp: ["4:22"],
   },
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["6:42"],
+    timestamp: ["5:24"],
+  },
+  {
+    actionName: "Fey Blessing",
+    type: "ogcd",
+    timestamp: ["6:40"],
   },
   // #endregion Fey Blessing
 
@@ -423,12 +484,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["3:32"],
+    timestamp: ["3:36"],
   },
   {
     actionName: "Indomitability",
     type: "ogcd",
-    timestamp: ["3:35"],
+    timestamp: ["3:43"],
   },
 
   {
@@ -447,7 +508,22 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["2:29"],
+    timestamp: ["0:58"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["2:20"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["4:02"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["5:37"],
   },
   {
     actionName: "Whispering Dawn",
@@ -456,10 +532,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   // #endregion Whispering Dawn
 
+  // Sprint
+  {
+    actionName: "Sprint",
+    type: "ogcd",
+    timestamp: ["6:14"],
+  },
+
   // Place
   {
     actionName: "Place",
     type: "ogcd",
-    timestamp: ["0:40"],
+    timestamp: ["0:43"],
   },
 ];

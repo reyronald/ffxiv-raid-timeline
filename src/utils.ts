@@ -1,11 +1,13 @@
 import { TimelineEvent } from "./types";
 
 export function getSecondsFromString(durationStr: string) {
-  const result = durationStr.match(/(?<minutesStr>\d+):(?<secondsStr>\d+)/);
+  const result = durationStr.match(
+    /(?<minutesStr>\d+):(?<secondsStr>\d+.?\d+)/
+  );
   if (result?.groups) {
     const { minutesStr, secondsStr } = result.groups;
     const minutes = Number.parseInt(minutesStr, 10);
-    const seconds = Number.parseInt(secondsStr, 10);
+    const seconds = Number.parseFloat(secondsStr, 10);
     const duration = minutes * 60 + seconds;
     return duration;
   }

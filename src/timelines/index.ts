@@ -3,6 +3,7 @@ import * as P1S from "./P1S";
 import * as P2S from "./P2S";
 import * as P3S from "./P3S";
 import * as P4S from "./P4S";
+import * as P4Sp2 from "./P4Sp2";
 
 export const TimelineObjects = { P1S, P2S, P3S, P4S };
 
@@ -41,12 +42,20 @@ export const Timelines: Timeline = {
       SCH: P3S.SCHEvents,
     },
   },
-  [P4S.zoneID]: {
-    zoneID: P4S.zoneID,
-    zoneName: P4S.zoneName,
-    bossEvents: P4S.BossEvents,
+  // [P4S.zoneID]: {
+  //   zoneID: P4S.zoneID,
+  //   zoneName: P4S.zoneName,
+  //   bossEvents: P4S.BossEvents,
+  //   playerEventsByJob: {
+  //     SCH: P4S.SCHEvents,
+  //   },
+  // },
+  [P4Sp2.zoneID]: {
+    zoneID: P4Sp2.zoneID,
+    zoneName: P4Sp2.zoneName,
+    bossEvents: P4Sp2.BossEvents,
     playerEventsByJob: {
-      SCH: P4S.SCHEvents,
+      SCH: P4Sp2.SCHEvents,
     },
   },
 };
