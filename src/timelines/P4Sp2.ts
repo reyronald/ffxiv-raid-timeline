@@ -392,6 +392,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // #endregion Dissipation
 
   // #region Chain Stratagem
+  // buff window lasts 17 seconds
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["0:07"],
+  },
   {
     actionName: "Chain Stratagem",
     type: "ogcd",
@@ -400,12 +406,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Chain Stratagem",
     type: "ogcd",
-    timestamp: ["4:36"],
+    timestamp: ["4:15"],
   },
   {
     actionName: "Chain Stratagem",
     type: "ogcd",
-    timestamp: ["7:49"],
+    timestamp: ["6:20"],
   },
   // #endregion
 
@@ -419,20 +425,58 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Protraction",
     type: "ogcd",
+    timestamp: ["3:19"],
+  },
+  {
+    actionName: "Protraction",
+    type: "ogcd",
     timestamp: ["5:47"],
   },
   // #endregion Protraction
 
-  // TODO complete
   // #region Fey Illumination
+  {
+    actionName: "Fey Illumination",
+    type: "ogcd",
+    timestamp: ["1:36"],
+  },
+  {
+    actionName: "Fey Illumination",
+    type: "ogcd",
+    timestamp: ["3:56"],
+  },
+  {
+    actionName: "Fey Illumination",
+    type: "ogcd",
+    timestamp: ["6:50"],
+  },
   // #endregion
 
-  // TODO complete
   // #region Whispering Dawn
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
     timestamp: ["1:06"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["2:11"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["3:18"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["4:20"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["5:37"],
   },
   {
     actionName: "Whispering Dawn",
