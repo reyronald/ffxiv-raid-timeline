@@ -65,7 +65,7 @@ function useActionIcon(actionName: string) {
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
     } else {
-      // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,_,_Score,Patch
+      // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch
       const promise = exponentialBackoff<
         XIVAPISearchResponse<{
           ID: number;
@@ -76,7 +76,7 @@ function useActionIcon(actionName: string) {
       >({
         fn: () =>
           fetch(
-            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,_,_Score,Patch`
+            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,,Patch`
           ).then((r) => r.json()),
         shouldRetry: (r) => "Error" in r && r.ExCode === 429,
         retryCount: 3,

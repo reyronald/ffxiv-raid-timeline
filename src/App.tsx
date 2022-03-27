@@ -1,8 +1,8 @@
 import clsx from "clsx";
 
-import { Timeline } from "./components/Timeline/Timeline";
+import { TimelineUI } from "./components/TimelineUI/TimelineUI";
 import { useWebSocket } from "./useWebSocket";
-import { TimelineObjects, getTimeline } from "./timelines";
+import { TimelineObjects, getTimelines } from "./timelines";
 
 import "./App.css";
 
@@ -23,22 +23,23 @@ function App() {
     ? zoneID
     : Number.parseInt(params.get("zoneID") || "0", 10) || defaultZone;
 
-  const {
-    zoneName: zoneNameFromStore,
-    bossEvents,
-    playerEvents,
-  } = getTimeline(resolvedZoneID, "SCH");
+  const timelines = getTimelines(resolvedZoneID);
 
+  const zoneNameFromStore =
+    timelines && "zoneName" in timelines
+      ? timelines.zoneName
+      : timelines && "zoneName" in timelines[0]
+      ? timelines[0].zoneName
+      : "";
   const zoneName = zoneNameFromACT || zoneNameFromStore;
 
   return (
     <main className={clsx("App", overlay && "App--overlay")}>
-      <Timeline
+      <TimelineUI
         overlay={overlay}
         zoneName={zoneName}
         isCombatActive={isCombatActive}
-        playerEvents={playerEvents}
-        bossEvents={bossEvents}
+        timelines={timelines}
       />
     </main>
   );

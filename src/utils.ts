@@ -7,7 +7,7 @@ export function getSecondsFromString(durationStr: string) {
   if (result?.groups) {
     const { minutesStr, secondsStr } = result.groups;
     const minutes = Number.parseInt(minutesStr, 10);
-    const seconds = Number.parseFloat(secondsStr, 10);
+    const seconds = Number.parseFloat(secondsStr);
     const duration = minutes * 60 + seconds;
     return duration;
   }

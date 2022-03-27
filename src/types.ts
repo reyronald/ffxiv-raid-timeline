@@ -18,7 +18,14 @@ export type TimelineBossEvent = {
 
 export type TimelineEvent = TimelinePlayerEvent | TimelineBossEvent;
 
-export type Job = "SCH";
+export type Timeline = {
+  zoneID: number;
+  zoneName: string;
+  bossEvents: TimelineBossEvent[];
+  playerEventsByJob: Partial<Record<Job, TimelinePlayerEvent[]>>;
+};
+
+export type Job = "SCH" | "AST";
 
 export type XIVAPISearchSuccessResponse<T> = {
   Pagination: {

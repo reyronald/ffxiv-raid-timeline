@@ -71,15 +71,24 @@
 }
 
 .Timeline--controls {
-  margin-top: 32px;
+  margin-top: 48px;
   padding: 0 32px;
   position: fixed;
+}
+
+.Timeline--controls > * + * {
+  margin-top: 32px;
+}
+
+.Timeline--info {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 .Timeline--time-and-zone {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 16px;
 }
 
 .Timeline--controls button {

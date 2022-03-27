@@ -302,6 +302,15 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   },
   // #endregion Biolysis
 
+  // #region Chain Stratagem
+  // buff window lasts 17 seconds
+  {
+    actionName: "Chain Stratagem",
+    type: "ogcd",
+    timestamp: ["0:07"],
+  },
+  // #endregion Chain Stratagem
+
   // #region Dissipation
   {
     actionName: "Dissipation",

@@ -3,18 +3,17 @@ import clsx from "clsx";
 import formatDuration from "format-duration";
 import { useState, useEffect } from "react";
 import {
-  TimelinePlayerEvent,
-  TimelineBossEvent,
   XIVAPISearchSuccessResponse,
   Job,
   ActionSearchResponse,
+  Timeline,
 } from "../../types";
 import { useTimer } from "../../useTimer";
 import { eventId, getLastEventFinishTime, getStart } from "../../utils";
 import { Castbar } from "../Castbar/Castbar";
 import { PlayerAction } from "../PlayerAction/PlayerAction";
 
-import "./Timeline.css";
+import "./TimelineUI.css";
 
 type AnimationPlayState = "stopped" | "running" | "paused";
 
@@ -22,23 +21,17 @@ type TimelineProps = {
   overlay: boolean;
   zoneName: string | null;
   isCombatActive: boolean;
-  playerEvents: TimelinePlayerEvent[];
-  bossEvents: TimelineBossEvent[];
+  timelines: Timeline | Timeline[];
 };
 
-export function Timeline({
+export function TimelineUI({
   overlay,
   zoneName,
   isCombatActive,
-  playerEvents,
-  bossEvents,
+  timelines,
 }: TimelineProps) {
-  const lastEventFinishTime = getLastEventFinishTime(bossEvents);
-
   const [animationPlayState, setAnimationPlayState] =
     useState<AnimationPlayState>("stopped");
-
-  const seconds = useTimer({ start: animationPlayState === "running" });
 
   useEffect(() => {
     if (isCombatActive && animationPlayState !== "running") {
@@ -49,7 +42,21 @@ export function Timeline({
     }
   }, [isCombatActive]);
 
+  const [timelineIndex, setTimelineIndex] = useState(0);
+
+  const { bossEvents, playerEventsByJob } = Array.isArray(timelines)
+    ? timelines[timelineIndex]
+    : timelines;
+
+  const jobsInTimeline = Object.keys(playerEventsByJob) as Job[];
+
+  const [selectedJob, setSelectedJob] = useState(jobsInTimeline[0]);
+
+  const seconds = useTimer({ start: animationPlayState === "running" });
+
   const datetime = formatDuration(seconds * 1000);
+  const playerEvents = playerEventsByJob[selectedJob] || [];
+  const lastEventFinishTime = getLastEventFinishTime(bossEvents);
 
   return (
     <div
@@ -97,30 +104,68 @@ export function Timeline({
         ))}
       </div>
 
-      {!overlay && (
-        <div className="Timeline--controls">
+      <div className="Timeline--controls">
+        <div className="Timeline--info">
           <div className="Timeline--time-and-zone">
             <time dateTime={datetime}>{datetime}</time> {zoneName}
           </div>
 
-          <button
-            onClick={() =>
-              setAnimationPlayState((prev) =>
-                prev === "running" ? "paused" : "running"
-              )
-            }
-          >
-            {animationPlayState === "running" ? "⏸ Pause" : "▶ Play"}
-          </button>
+          {Array.isArray(timelines) && timelines.length > 1 && (
+            <select
+              id="phase"
+              name="phase"
+              value={timelineIndex}
+              onChange={(e) =>
+                setTimelineIndex(Number.parseInt(e.currentTarget.value, 10))
+              }
+            >
+              {timelines.map((_, i) => (
+                <option key={i} value={i}>
+                  Phase {i + 1}
+                </option>
+              ))}
+            </select>
+          )}
 
-          <button
-            onClick={() => setAnimationPlayState("stopped")}
-            disabled={animationPlayState === "stopped"}
-          >
-            ⏪ Restart
-          </button>
+          {jobsInTimeline.length > 1 && (
+            <select
+              id="job"
+              name="job"
+              value={selectedJob}
+              onChange={(e) => setSelectedJob(e.currentTarget.value as Job)}
+            >
+              {jobsInTimeline.map((job) => (
+                <option key={job} value={job}>
+                  {job}
+                </option>
+              ))}
+            </select>
+          )}
         </div>
-      )}
+
+        <div>
+          {!overlay && (
+            <>
+              <button
+                onClick={() =>
+                  setAnimationPlayState((prev) =>
+                    prev === "running" ? "paused" : "running"
+                  )
+                }
+              >
+                {animationPlayState === "running" ? "⏸ Pause" : "▶ Play"}
+              </button>
+
+              <button
+                onClick={() => setAnimationPlayState("stopped")}
+                disabled={animationPlayState === "stopped"}
+              >
+                ⏪ Restart
+              </button>
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
