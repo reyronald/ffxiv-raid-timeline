@@ -110,3 +110,30 @@ export function getTimelineFromTSV(tsv: string) {
 
   return arrayStr;
 }
+
+function delay(ms: number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export async function exponentialBackoff<TResponse>(args: {
+  fn: () => Promise<TResponse>;
+  shouldRetry: (r: TResponse) => boolean;
+  retryCount: number;
+}) {
+  const { fn, shouldRetry, retryCount } = args;
+
+  let count = 0;
+  const result = await (async function execute(): Promise<TResponse> {
+    const response = await fn();
+    const retrying = shouldRetry(response);
+
+    if (retrying && count++ < retryCount) {
+      await delay(400 * count);
+      return execute();
+    }
+
+    return response;
+  })();
+
+  return result;
+}

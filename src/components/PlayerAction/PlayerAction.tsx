@@ -5,6 +5,7 @@ import {
   XIVAPISearchResponse,
   XIVAPISearchSuccessResponse,
 } from "../../types";
+import { exponentialBackoff } from "../../utils";
 
 import "./PlayerAction.css";
 
@@ -58,48 +59,49 @@ function useActionIcon(actionName: string) {
       const path = "/i/000000/000527.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
-    } else if (actionName === "Surecast") {
-      // https://xivapi.com/i/000000/000869.png
-      const path = "/i/000000/000869.png";
-      setIcon(path);
-      iconCache.set(actionName, Promise.resolve(path));
     } else if (actionName === "Swiftcast") {
       // https://xivapi.com/i/000000/000866.png
       const path = "/i/000000/000866.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
     } else {
-      // e.g. https://xivapi.com/search?indexes=Action,Item&string=Expedient
-      const promise = fetch(
-        `https://xivapi.com/search?indexes=Action,Item&string=${actionName}`
-      )
-        .then((r) => r.json())
-        .then(
-          (
-            response: XIVAPISearchResponse<{
-              ID: number;
-              Icon: string;
-              Name: string;
-            }>
-          ) => {
-            if ("Error" in response && response.Error) {
-              console.log(response);
-              return "";
-            }
+      // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,_,_Score,Patch
+      const promise = exponentialBackoff<
+        XIVAPISearchResponse<{
+          ID: number;
+          Icon: string;
+          Name: string;
+          Patch: number;
+        }>
+      >({
+        fn: () =>
+          fetch(
+            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,_,_Score,Patch`
+          ).then((r) => r.json()),
+        shouldRetry: (r) => "Error" in r && r.ExCode === 429,
+        retryCount: 3,
+      }).then((response) => {
+        if ("Error" in response && response.Error) {
+          console.log(response);
+          return "";
+        }
 
-            if ("Results" in response) {
-              if (response.Results[0]) {
-                return response.Results[0].Icon;
-              }
-              console.info(`Got no results XIVAPI results for "${actionName}"`);
-              return "";
-            }
-
-            console.error(response);
-
-            throw new Error("Error getting response from XIVApi");
+        if ("Results" in response) {
+          // Pick the action from the most recent Patch
+          // to filter out deprecated, obsolete, or reeworked actions
+          const results = response.Results.sort((a, b) => b.Patch - a.Patch);
+          const [result] = results;
+          if (result) {
+            return result.Icon;
           }
-        );
+          console.info(`Got no results XIVAPI results for "${actionName}"`);
+          return "";
+        }
+
+        console.error(response);
+
+        throw new Error("Error getting response from XIVApi");
+      });
 
       iconCache.set(actionName, promise);
 
