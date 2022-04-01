@@ -89,7 +89,9 @@ function useActionIcon(actionName: string) {
         if ("Results" in response) {
           // Pick the action from the most recent Patch
           // to filter out deprecated, obsolete, or reeworked actions
-          const results = response.Results.sort((a, b) => b.Patch - a.Patch);
+          const results = response.Results.filter(
+            (r) => r.Icon !== "/i/000000/000405.png"
+          ).sort((a, b) => b.Patch - a.Patch);
           const [result] = results;
           if (result) {
             return result.Icon;

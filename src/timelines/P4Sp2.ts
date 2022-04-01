@@ -489,7 +489,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["1:43"],
+    timestamp: ["1:40"],
   },
   {
     actionName: "Expedient",
@@ -547,7 +547,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Consolation",
     type: "ogcd",
-    timestamp: ["1:42"],
+    timestamp: ["1:43"],
   },
   {
     actionName: "Consolation",

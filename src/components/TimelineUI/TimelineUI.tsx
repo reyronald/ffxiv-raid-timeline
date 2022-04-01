@@ -50,7 +50,13 @@ export function TimelineUI({
 
   const jobsInTimeline = Object.keys(playerEventsByJob) as Job[];
 
+  const [firstJobInTimeline] = jobsInTimeline;
   const [selectedJob, setSelectedJob] = useState(jobsInTimeline[0]);
+  useEffect(() => {
+    if (firstJobInTimeline) {
+      setSelectedJob(firstJobInTimeline);
+    }
+  }, [firstJobInTimeline]);
 
   const seconds = useTimer({ start: animationPlayState === "running" });
 

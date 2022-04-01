@@ -343,7 +343,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["5:22"],
+    timestamp: ["6:31"],
   },
   // #endregion Expedient
 
@@ -425,6 +425,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Sacred Soil",
     type: "ogcd",
     timestamp: ["4:31"],
+  },
+  {
+    actionName: "Sacred Soil",
+    type: "ogcd",
+    timestamp: ["5:10"],
   },
   {
     actionName: "Sacred Soil",
