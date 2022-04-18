@@ -106,6 +106,164 @@ export const BossEvents: TimelineBossEvent[] = [
     actionName: "Endsong's Aporrhoia",
     timestamp: ["5:10", "5:12"],
   },
+  {
+    actionName: "Endsong",
+    timestamp: ["5:18", "5:21"],
+  },
+  {
+    actionName: "Endsong #1",
+    timestamp: ["5:30", "5:31"],
+  },
+  {
+    actionName: "Endsong #2",
+    timestamp: ["5:39", "5:40"],
+  },
+  {
+    actionName: "Endsong #3 + Elenchos",
+    timestamp: ["5:47", "5:52"],
+  },
+  {
+    actionName: "Telos",
+    timestamp: ["5:57", "6:02"],
+  },
+  {
+    actionName: "Hubris",
+    timestamp: ["6:08", "6:12"],
+    tankBuster: true,
+  },
+  {
+    actionName: "Elegeia Unforgotten",
+    timestamp: ["6:22", "6:27"],
+  },
+  {
+    actionName: "(boom)",
+    timestamp: ["6:39"],
+  },
+  {
+    actionName: "Eironeia",
+    timestamp: ["6:40", "6:43"],
+  },
+  {
+    actionName: "Fatalism",
+    timestamp: ["6:47", "6:50"],
+  },
+  {
+    actionName: "Fatalism",
+    timestamp: ["6:56", "6:59"],
+  },
+  {
+    actionName: "(boom #1)",
+    timestamp: ["7:01"],
+  },
+  {
+    actionName: "(boom #2)",
+    timestamp: ["7:08"],
+  },
+  {
+    actionName: "(boom #3) + Katasterismoi",
+    timestamp: ["7:11", "7:14"],
+  },
+  {
+    actionName: "(boom #4)",
+    timestamp: ["7:19"],
+  },
+  {
+    actionName: "Elenchos",
+    timestamp: ["7:21", "7:26"],
+  },
+  {
+    actionName: "Telomania",
+    timestamp: ["7:31", "7:36"],
+  },
+  {
+    actionName: "Twinsong's Aporrhoia",
+    timestamp: ["7:57", "8:00"],
+  },
+  {
+    actionName: "Aporrhoia Unforgotten #1",
+    timestamp: ["8:06", "8:10"],
+  },
+  {
+    actionName: "Aporrhoia Unforgotten #2",
+    timestamp: ["8:15", "8:19"],
+  },
+  {
+    actionName: "Aporrhoia Unforgotten #3",
+    timestamp: ["8:24", "8:29"],
+  },
+  {
+    actionName: "Theological Fatalism",
+    timestamp: ["8:34", "8:37"],
+  },
+  {
+    actionName: "Elenchos + Eironeia (lp stack)",
+    timestamp: ["8:46", "8:51"],
+  },
+  {
+    actionName: "Hubris",
+    timestamp: ["8:55", "8:59"],
+    tankBuster: true,
+  },
+  {
+    actionName: "Endsong's Aporrhoia",
+    timestamp: ["9:07", "9:10"],
+  },
+  {
+    actionName: "Endsong",
+    timestamp: ["9:15", "9:18"],
+  },
+  {
+    actionName: "Endsong #1",
+    timestamp: ["9:27", "9:28"],
+  },
+  {
+    actionName: "Endsong #1",
+    timestamp: ["9:36", "9:37"],
+  },
+  {
+    actionName: "Elenchos",
+    timestamp: ["9:44", "9:50"],
+  },
+  {
+    actionName: "Telos",
+    timestamp: ["9:54", "9:59"],
+  },
+  {
+    actionName: "Fatalism",
+    timestamp: ["10:10", "10:12"],
+  },
+  {
+    actionName: "Fatalism",
+    timestamp: ["10:20", "10:22"],
+  },
+  {
+    actionName: "(boom #1)",
+    timestamp: ["10:25"],
+  },
+  {
+    actionName: "(boom #2)",
+    timestamp: ["10:31"],
+  },
+  {
+    actionName: "(boom #3)",
+    timestamp: ["10:35"],
+  },
+  {
+    actionName: "(boom #4)",
+    timestamp: ["10:41"],
+  },
+  {
+    actionName: "Telos",
+    timestamp: ["10:42", "10:46"],
+  },
+  {
+    actionName: "Fatalism",
+    timestamp: ["10:56", "11:00"],
+  },
+  {
+    actionName: "Apocalypse (ENRAGE)",
+    timestamp: ["11:23"],
+  },
 ];
 
 // https://xivanalysis.com/fflogs/9aLnf76zrcJXPFjZ/16/7
