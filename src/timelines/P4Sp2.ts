@@ -247,6 +247,11 @@ export const BossEvents: TimelineBossEvent[] = [
     actionName: "Akanthai: Curtain Call",
     timestamp: ["6:22", "6:27"],
   },
+
+  {
+    actionName: "Thunder III",
+    timestamp: ["6:39"],
+  },
   // ...
   {
     actionName: "Hell's Sting",
@@ -387,7 +392,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Dissipation",
     type: "ogcd",
-    timestamp: ["6:06"],
+    timestamp: ["6:27"],
   },
   // #endregion Dissipation
 
@@ -456,32 +461,42 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["1:06"],
+    timestamp: ["0:38"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["2:11"],
+    timestamp: ["1:38"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["3:35"],
+    timestamp: ["2:40"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["4:35"],
+    timestamp: ["3:41"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["5:37"],
+    timestamp: ["4:47"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["6:53"],
+    timestamp: ["5:52"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["6:57"],
+  },
+  {
+    actionName: "Whispering Dawn",
+    type: "ogcd",
+    timestamp: ["7:59"],
   },
   // #endregion Whispering Dawn
 
@@ -499,7 +514,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Expedient",
     type: "ogcd",
-    timestamp: ["7:51"],
+    timestamp: ["7:39"],
   },
   // #endregion Expedient
 
@@ -518,23 +533,23 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["4:06"],
+    timestamp: ["4:22"],
   },
   {
     actionName: "Indomitability",
     type: "ogcd",
-    timestamp: ["4:18"],
+    timestamp: ["4:28"],
   },
 
   {
     actionName: "Recitation",
     type: "ogcd",
-    timestamp: ["6:35"],
+    timestamp: ["6:47"],
   },
   {
     actionName: "Indomitability",
     type: "ogcd",
-    timestamp: ["6:46"],
+    timestamp: ["6:53"],
   },
   // #endregion
 
@@ -592,12 +607,17 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Fey Blessing",
     type: "ogcd",
+    timestamp: ["1:11"],
+  },
+  {
+    actionName: "Fey Blessing",
+    type: "ogcd",
     timestamp: ["2:51"],
   },
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["4:22"],
+    timestamp: ["4:10"],
   },
   {
     actionName: "Fey Blessing",
@@ -607,7 +627,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Fey Blessing",
     type: "ogcd",
-    timestamp: ["7:05"],
+    timestamp: ["6:44"],
+  },
+  {
+    actionName: "Fey Blessing",
+    type: "ogcd",
+    timestamp: ["7:46"],
   },
   // #endregion Fey Blessing
 
@@ -633,7 +658,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Sacred Soil",
     type: "ogcd",
-    timestamp: ["7:15"],
+    timestamp: ["6:35"],
+  },
+  {
+    actionName: "Sacred Soil",
+    type: "ogcd",
+    timestamp: ["7:07"],
   },
   {
     actionName: "Sacred Soil",
@@ -651,11 +681,11 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // #endregion
 
   // #region Succor
-  {
-    actionName: "Succor",
-    type: "ogcd",
-    timestamp: ["4:25"],
-  },
+  // {
+  //   actionName: "Succor",
+  //   type: "ogcd",
+  //   timestamp: ["4:25"],
+  // },
   {
     actionName: "Succor",
     type: "ogcd",
@@ -664,6 +694,16 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   // #endregion
 
   // #region Adloquium
+  {
+    actionName: "Adloquium",
+    type: "ogcd",
+    timestamp: ["1:24"],
+  },
+  {
+    actionName: "Deployment Tactics",
+    type: "ogcd",
+    timestamp: ["1:33"],
+  },
   {
     actionName: "Adloquium",
     type: "ogcd",
@@ -704,13 +744,86 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Surecast",
     type: "ogcd",
-    timestamp: ["2:41"],
+    timestamp: ["2:43"],
   },
 
   // Potions
   {
     actionName: "Grade 6 Tincture of Mind",
     type: "ogcd",
-    timestamp: ["7:46"],
+    timestamp: ["7:48"],
+  },
+
+  // Buff window
+  {
+    actionName: "Broil IV",
+    type: "gcd",
+    timestamp: ["4:14"],
+  },
+  // {
+  //   actionName: "Broil IV",
+  //   type: "gcd",
+  //   timestamp: ["4:16.32"],
+  // },
+  {
+    actionName: "Energy Drain",
+    type: "ogcd",
+    timestamp: ["4:17.82"],
+  },
+  // {
+  //   actionName: "Broil IV",
+  //   type: "gcd",
+  //   timestamp: ["4:18.64"],
+  // },
+  {
+    actionName: "Energy Drain",
+    type: "ogcd",
+    timestamp: ["4:20.14"],
+  },
+  // {
+  //   actionName: "Ruin II",
+  //   type: "gcd",
+  //   timestamp: ["4:20.96"],
+  // },
+  {
+    actionName: "Energy Drain",
+    type: "ogcd",
+    timestamp: ["4:22.70"],
+  },
+  // {
+  //   actionName: "Broil IV",
+  //   type: "gcd",
+  //   timestamp: ["4:23.28"],
+  // },
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["4:24.78"],
+  },
+  // {
+  //   actionName: "Broil IV",
+  //   type: "gcd",
+  //   timestamp: ["4:25.60"],
+  // },
+  {
+    actionName: "Energy Drain",
+    type: "ogcd",
+    timestamp: ["4:27.10"],
+  },
+  // {
+  //   actionName: "Broil IV",
+  //   type: "gcd",
+  //   timestamp: ["4:27.92"],
+  // },
+  {
+    actionName: "Energy Drain",
+    type: "ogcd",
+    timestamp: ["4:29.42"],
+  },
+
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["5:43"],
   },
 ];
