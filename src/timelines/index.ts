@@ -4,8 +4,9 @@ import * as P2S from "./P2S";
 import * as P3S from "./P3S";
 import * as P4S from "./P4S";
 import * as P4Sp2 from "./P4Sp2";
+import * as EndsingerEX from "./EndsingerEX";
 
-export const TimelineObjects = { P1S, P2S, P3S, P4S };
+export const TimelineObjects = { P1S, P2S, P3S, P4S, EndsingerEX };
 
 type TimelinesByZoneID = Partial<Record<number, Timeline | Timeline[]>>;
 
@@ -52,6 +53,14 @@ export const Timelines: TimelinesByZoneID = {
       },
     },
   ],
+  [EndsingerEX.zoneID]: {
+    zoneID: EndsingerEX.zoneID,
+    zoneName: EndsingerEX.zoneName,
+    bossEvents: EndsingerEX.BossEvents,
+    playerEventsByJob: {
+      SCH: EndsingerEX.SCHEvents,
+    },
+  },
 };
 
 export function getTimelines(zoneID: number | null): Timeline | Timeline[] {
