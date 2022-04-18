@@ -25,6 +25,10 @@ export function getDuration(event: TimelineEvent) {
   if (Array.isArray(event.timestamp)) {
     const [startInput, endInput] = event.timestamp;
 
+    if (!endInput) {
+      return 0;
+    }
+
     const start =
       typeof startInput === "number"
         ? startInput
@@ -69,11 +73,24 @@ export function getLastEventFinishTime(timeline: TimelineEvent[]) {
     const prevDuration = getDuration(prev);
     const prevStart = getStart(prev);
 
+    if (current.actionName.includes("ENRAGE")) {
+      console.log({
+        currentDuration,
+        currentStart,
+        prevDuration,
+        prevStart,
+      });
+    }
+
     if (currentStart + currentDuration > prevStart + prevDuration) {
       return current;
     }
     return prev;
   });
+
+  const x = getDuration(timeline.at(-1)!);
+
+  console.log({ lastEvent, x });
 
   const lastEventStart = getStart(lastEvent);
 
