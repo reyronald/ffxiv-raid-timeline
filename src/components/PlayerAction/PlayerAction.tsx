@@ -65,18 +65,20 @@ function useActionIcon(actionName: string) {
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
     } else {
-      // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch
+      // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch,ClassJobTargetID,IsPvP
       const promise = exponentialBackoff<
         XIVAPISearchResponse<{
           ID: number;
           Icon: string;
           Name: string;
           Patch: number;
+          ClassJobTargetID: -1 | 0;
+          IsPvP: 0 | 1;
         }>
       >({
         fn: () =>
           fetch(
-            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,,Patch`
+            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch,ClassJobTargetID,IsPvP`
           ).then((r) => r.json()),
         shouldRetry: (r) => "Error" in r && r.ExCode === 429,
         retryCount: 3,
@@ -91,7 +93,10 @@ function useActionIcon(actionName: string) {
           // to filter out deprecated, obsolete, or reeworked actions
           const results = response.Results.filter(
             (r) => r.Icon !== "/i/000000/000405.png"
-          ).sort((a, b) => b.Patch - a.Patch);
+          )
+            .filter((r) => r.ClassJobTargetID != -1)
+            .filter((r) => !r.IsPvP)
+            .sort((a, b) => b.Patch - a.Patch);
           const [result] = results;
           if (result) {
             return result.Icon;

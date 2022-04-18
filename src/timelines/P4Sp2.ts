@@ -466,12 +466,12 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["3:18"],
+    timestamp: ["3:35"],
   },
   {
     actionName: "Whispering Dawn",
     type: "ogcd",
-    timestamp: ["4:20"],
+    timestamp: ["4:35"],
   },
   {
     actionName: "Whispering Dawn",
