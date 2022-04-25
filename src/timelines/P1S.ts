@@ -361,4 +361,20 @@ export const BossEvents: TimelineBossEvent[] = [
   },
 ];
 
-export const SCHEvents: TimelinePlayerEvent[] = [];
+export const SCHEvents: TimelinePlayerEvent[] = [
+  {
+    actionName: "Summon Seraph",
+    timestamp: ["2:38"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Consolation",
+    timestamp: ["2:43"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Consolation",
+    timestamp: ["2:52"],
+    type: "ogcd",
+  },
+];
