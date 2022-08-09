@@ -392,7 +392,7 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Dissipation",
     type: "ogcd",
-    timestamp: ["6:27"],
+    timestamp: ["6:03"],
   },
   // #endregion Dissipation
 
@@ -754,6 +754,29 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     timestamp: ["7:48"],
   },
 
+  // Aetherflow
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["1:14"],
+  },
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["2:16"],
+  },
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["3:18"],
+  },
+  // 4:20
+  {
+    actionName: "Aetherflow",
+    type: "ogcd",
+    timestamp: ["5:22"],
+  },
+
   // Buff window
   {
     actionName: "Broil IV",
@@ -819,11 +842,5 @@ export const SCHEvents: TimelinePlayerEvent[] = [
     actionName: "Energy Drain",
     type: "ogcd",
     timestamp: ["4:29.42"],
-  },
-
-  {
-    actionName: "Aetherflow",
-    type: "ogcd",
-    timestamp: ["5:43"],
   },
 ];

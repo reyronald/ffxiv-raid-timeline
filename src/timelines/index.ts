@@ -33,6 +33,7 @@ export const Timelines: TimelinesByZoneID = {
     bossEvents: P3S.BossEvents,
     playerEventsByJob: {
       SCH: P3S.SCHEvents,
+      PLD: P3S.PLDEvents,
     },
   },
   [P4S.zoneID]: [

@@ -858,3 +858,127 @@ export const SCHEvents: TimelinePlayerEvent[] = [
   //   timestamp: ["8:06"],
   // },
 ];
+
+export const PLDEvents: TimelinePlayerEvent[] = [
+  // Rampart recast 90s (duration 20s)
+  {
+    actionName: "Rampart",
+    type: "gcd",
+    timestamp: ["1:24"], // 2:54
+  },
+  {
+    actionName: "Rampart",
+    type: "gcd",
+    timestamp: ["1:24"], // 2:54
+  },
+  {
+    actionName: "Rampart",
+    type: "gcd",
+    timestamp: ["3:50"], // 5:20
+  },
+  {
+    actionName: "Rampart",
+    type: "gcd",
+    timestamp: ["6:38"], // 8:08
+  },
+
+  // Sentinel recast 120s (duration 15s)
+  {
+    actionName: "Sentinel",
+    type: "gcd",
+    timestamp: ["0:10"], // 2:10
+  },
+  {
+    actionName: "Sentinel",
+    type: "gcd",
+    timestamp: ["3:06"], // 5:06
+  },
+  {
+    actionName: "Sentinel",
+    type: "gcd",
+    timestamp: ["5:08"], // 7:08
+  },
+
+  // Reprisal recast 60s (duration 10s)
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["1:39"],
+  },
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["3:10"],
+  },
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["4:40"],
+  },
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["7:04"],
+  },
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["8:24"],
+  },
+  {
+    actionName: "Reprisal",
+    type: "gcd",
+    timestamp: ["10:32"],
+  },
+
+  // Passage of Arms recast 120s
+  {
+    actionName: "Passage of Arms",
+    type: "gcd",
+    timestamp: ["1:40"], // 3:40
+  },
+  {
+    actionName: "Passage of Arms",
+    type: "gcd",
+    timestamp: ["4:42"], // 6:42
+  },
+  {
+    actionName: "Passage of Arms",
+    type: "gcd",
+    timestamp: ["7:07"], // 9:07
+  },
+  {
+    actionName: "Passage of Arms",
+    type: "gcd",
+    timestamp: ["10:33"],
+  },
+
+  // Divine Veil recast 90s
+  {
+    actionName: "Divine Veil",
+    type: "gcd",
+    timestamp: ["3:30"], // 5:00
+  },
+  {
+    actionName: "Divine Veil",
+    type: "gcd",
+    timestamp: ["7:31"], // 9:01
+  },
+  {
+    actionName: "Divine Veil",
+    type: "gcd",
+    timestamp: ["9:17"],
+  },
+
+  // Hallowed Ground recast 420s (7min)
+  {
+    actionName: "Hallowed Ground",
+    type: "gcd",
+    timestamp: ["0:16"],
+  },
+  {
+    actionName: "Hallowed Ground",
+    type: "gcd",
+    timestamp: ["7:48"],
+  },
+];
