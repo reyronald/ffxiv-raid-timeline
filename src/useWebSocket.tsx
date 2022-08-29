@@ -42,7 +42,7 @@ export function useWebSocket() {
           );
           if (match) {
             const groups = match.groups as unknown as NetworkAbility;
-            console.log(groups.ability, groups);
+            // console.log(groups.ability, groups);
           }
         }
 
@@ -52,7 +52,7 @@ export function useWebSocket() {
           );
           if (match) {
             const groups = match.groups as unknown as NetworkAbility;
-            console.log(groups.ability, groups);
+            // console.log(groups.ability, groups);
           }
         }
       }

@@ -73,14 +73,14 @@ export function getLastEventFinishTime(timeline: TimelineEvent[]) {
     const prevDuration = getDuration(prev);
     const prevStart = getStart(prev);
 
-    if (current.actionName.includes("ENRAGE")) {
-      console.log({
-        currentDuration,
-        currentStart,
-        prevDuration,
-        prevStart,
-      });
-    }
+    // if (current.actionName.includes("ENRAGE")) {
+    //   console.log({
+    //     currentDuration,
+    //     currentStart,
+    //     prevDuration,
+    //     prevStart,
+    //   });
+    // }
 
     if (currentStart + currentDuration > prevStart + prevDuration) {
       return current;
@@ -89,8 +89,6 @@ export function getLastEventFinishTime(timeline: TimelineEvent[]) {
   });
 
   const x = getDuration(timeline.at(-1)!);
-
-  console.log({ lastEvent, x });
 
   const lastEventStart = getStart(lastEvent);
 

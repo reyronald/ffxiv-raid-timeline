@@ -5,8 +5,16 @@ import * as P3S from "./P3S";
 import * as P4S from "./P4S";
 import * as P4Sp2 from "./P4Sp2";
 import * as EndsingerEX from "./EndsingerEX";
+import * as BarbaricciaEX from "./BarbaricciaEX";
 
-export const TimelineObjects = { P1S, P2S, P3S, P4S, EndsingerEX };
+export const TimelineObjects = {
+  P1S,
+  P2S,
+  P3S,
+  P4S,
+  EndsingerEX,
+  BarbaricciaEX,
+};
 
 type TimelinesByZoneID = Partial<Record<number, Timeline | Timeline[]>>;
 
@@ -60,6 +68,15 @@ export const Timelines: TimelinesByZoneID = {
     bossEvents: EndsingerEX.BossEvents,
     playerEventsByJob: {
       SCH: EndsingerEX.SCHEvents,
+    },
+  },
+  [BarbaricciaEX.zoneID]: {
+    zoneID: BarbaricciaEX.zoneID,
+    zoneName: BarbaricciaEX.zoneName,
+    bossEvents: BarbaricciaEX.BossEvents,
+    playerEventsByJob: {
+      SCH: BarbaricciaEX.SCHEvents,
+      BRD: BarbaricciaEX.BRDevents,
     },
   },
 };
