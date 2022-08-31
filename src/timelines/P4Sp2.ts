@@ -36,7 +36,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Farsight / Nearsight",
     timestamp: ["1:04", "1:09"],
-    tankBuster: true,
+    type: "tb",
   },
   // #endregion Act 1
 
@@ -48,7 +48,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Demigod Double",
     timestamp: ["1:26", "1:31"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Wrath of Thorns",
@@ -104,12 +104,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Farsight / Nearsight",
     timestamp: ["3:01", "3:06"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Heart Stake",
     timestamp: ["3:16", "3:21"],
-    tankBuster: true,
+    type: "tb",
   },
   // #endregion
 
@@ -229,7 +229,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Farsight / Nearsight",
     timestamp: ["5:46", "5:51"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Searing Stream",
@@ -238,7 +238,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Demigod Double",
     timestamp: ["6:09", "6:13"],
-    tankBuster: true,
+    type: "tb",
   },
   // #endregion Finale
 

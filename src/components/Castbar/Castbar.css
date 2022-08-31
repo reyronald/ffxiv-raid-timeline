@@ -24,3 +24,8 @@
   border-color: red;
   background: #ffd4d4;
 }
+
+.castbar--raidwide {
+  border-color: #ff1bff;
+  background: #ffcbff;
+}

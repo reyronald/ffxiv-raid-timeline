@@ -7,7 +7,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heavy Hand",
     timestamp: ["0:09", "0:14"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Aetherial Shackles",
@@ -36,7 +36,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Pitiless Flail of Purgation/Grace",
     timestamp: ["1:07", "1:12"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "True Flare/Holy",
@@ -89,7 +89,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Pitiless Flail of Purgation/Grace",
     timestamp: ["2:43", "2:48"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "True Flare/Holy",
@@ -123,7 +123,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Pitiless Flail of Purgation/Grace",
     timestamp: ["3:39", "3:45"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "True Flare/Holy",
@@ -156,7 +156,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heavy Hand",
     timestamp: ["4:21", "4:26"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Inevitable Light/Fire",
@@ -269,7 +269,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Pitiless Flail of Purgation/Grace",
     timestamp: ["7:42", "7:47"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "True Flare/Holy",

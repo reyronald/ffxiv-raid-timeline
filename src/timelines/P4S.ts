@@ -36,12 +36,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Elegant Evisceration",
     timestamp: ["1:17", "1:21"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Elegant Evisceration #2",
     timestamp: ["1:25"],
-    tankBuster: true,
+    type: "tb",
   },
 
   // Pinax
@@ -92,12 +92,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Elegant Evisceration",
     timestamp: ["2:31", "2:36"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Elegant Evisceration #2",
     timestamp: ["2:40"],
-    tankBuster: true,
+    type: "tb",
   },
 
   // Orbs + Towers
@@ -172,12 +172,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Elegant Evisceration",
     timestamp: ["5:27", "5:32"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Elegant Evisceration #2",
     timestamp: ["5:36"],
-    tankBuster: true,
+    type: "tb",
   },
 
   // Pinax

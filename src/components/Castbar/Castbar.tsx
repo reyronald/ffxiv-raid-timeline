@@ -8,14 +8,15 @@ type Props = {
   event: TimelineBossEvent;
 };
 
-export function Castbar({ event, event: { actionName, tankBuster } }: Props) {
+export function Castbar({ event, event: { actionName, type } }: Props) {
   const duration = getDuration(event);
   return (
     <div className="castbar">
       <div
         className={clsx(
           "castbar--progress",
-          tankBuster && "castbar--tankBuster"
+          type === "tb" && "castbar--tankBuster",
+          type === "rw" && "castbar--raidwide"
         )}
         style={{ ["--duration" as any]: duration }}
       />

@@ -7,6 +7,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Void Aero IV",
     timestamp: ["0:09", "0:14"],
+    type: "rw",
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["0:22"],
+    type: "rw",
   },
   {
     actionName: "Savage Barbery",
@@ -17,6 +23,16 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["0:39", "0:44"],
   },
   {
+    actionName: "lightparty raidwide",
+    timestamp: ["0:49"],
+    type: "rw",
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["0:52"],
+    type: "rw",
+  },
+  {
     actionName: "Savage Barbery",
     timestamp: ["0:54", "1:00"],
   },
@@ -25,13 +41,24 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["1:07", "1:12"],
   },
   {
+    actionName: "raidwide",
+    timestamp: ["1:17"],
+    type: "rw",
+  },
+  {
     actionName: "Void Aero IV",
     timestamp: ["1:20", "1:24"],
+    type: "rw",
   },
   {
     actionName: "Void Aero III (swap)",
     timestamp: ["1:27", "1:31"],
-    tankBuster: true,
+    type: "tb",
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["1:40"],
+    type: "rw",
   },
   {
     actionName: "Teasing Tangles",
@@ -44,14 +71,25 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Void Aero IV",
     timestamp: ["2:06", "2:11"],
+    type: "rw",
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["2:18"],
+    type: "rw",
   },
   {
     actionName: "Curling Iron",
     timestamp: ["2:21", "2:25"],
   },
   {
+    actionName: "(untargetable)",
+    timestamp: ["2:40"],
+  },
+  {
     actionName: "(land)",
     timestamp: ["2:51"],
+    type: "rw",
   },
   {
     actionName: "Tethers",
@@ -76,7 +114,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Tank buster (shared)",
     timestamp: ["3:04", "3:13"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Center baits",
@@ -108,10 +146,10 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["3:42"],
   },
   {
-    actionName: "Ground Smash",
+    actionName: "Knuckle Drum",
     timestamp: ["3:44", "3:51"],
+    type: "rw",
   },
-
   {
     actionName: "Puddles",
     timestamp: ["3:56"],
@@ -135,6 +173,16 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Flares + Stack",
     timestamp: ["4:05", "4:11"],
+  },
+  {
+    actionName: "(flare)",
+    timestamp: ["4:12"],
+    type: "tb",
+  },
+  {
+    actionName: "(stack)",
+    timestamp: ["4:14"],
+    type: "rw",
   },
 
   {
@@ -163,8 +211,19 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["4:26", "4:35"],
   },
   {
-    actionName: "Ground Smash",
+    actionName: "(center AoE)",
+    timestamp: ["4:42"],
+  },
+  {
+    actionName: "Knuckle Drum",
     timestamp: ["4:53", "5:01"],
+    type: "rw",
+  },
+
+  // Phsae Change
+  {
+    actionName: "Phase Change",
+    timestamp: ["5:06", "5:14"],
   },
 
   {
@@ -186,15 +245,21 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Void Aero IV",
     timestamp: ["6:09", "6:13"],
+    type: "rw",
   },
   {
     actionName: "Void Aero III",
     timestamp: ["6:15", "6:20"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Entanglement (playstation)",
     timestamp: ["6:31", "6:34"],
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["6:49"],
+    type: "rw",
   },
   {
     actionName: "Savage Barbery",
@@ -205,11 +270,22 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["7:01", "7:06"],
   },
   {
-    actionName: "Void Aero IV",
-    timestamp: ["7:15", "7:21"],
+    actionName: "raidwide",
+    timestamp: ["7:11"],
+    type: "rw",
   },
   {
-    actionName: "Curling Iron",
+    actionName: "Void Aero IV",
+    timestamp: ["7:15", "7:21"],
+    type: "rw",
+  },
+  {
+    actionName: "raidwide",
+    timestamp: ["7:28"],
+    type: "rw",
+  },
+  {
+    actionName: "Curling Iron (phase change)",
     timestamp: ["7:30", "7:35"],
   },
 
@@ -236,8 +312,9 @@ export const BossEvents: TimelineBossEvent[] = [
   },
 
   {
-    actionName: "Ground Smash",
+    actionName: "Knuckle Drum",
     timestamp: ["7:58", "8:06"],
+    type: "rw",
   },
   {
     actionName: "Puddles",
@@ -262,54 +339,59 @@ export const BossEvents: TimelineBossEvent[] = [
 
   {
     actionName: "Center Bait",
-    timestamp: ["8:19", "8:21"],
+    timestamp: ["8:19", "8:20"],
   },
 
   {
     actionName: "Tethers",
-    timestamp: ["8:22"],
+    timestamp: ["8:21"],
   },
   {
     actionName: "#1",
-    timestamp: ["8:23"],
+    timestamp: ["8:22"],
   },
   {
     actionName: "#2",
-    timestamp: ["8:24"],
+    timestamp: ["8:23"],
   },
   {
     actionName: "#3",
-    timestamp: ["8:25"],
+    timestamp: ["8:24"],
   },
   {
     actionName: "#4",
-    timestamp: ["8:26"],
+    timestamp: ["8:25"],
   },
 
   {
-    actionName: "Spreads",
+    actionName: "Center AoE",
+    timestamp: ["8:29", "8:33"],
+  },
+
+  {
+    actionName: "Spreads (with kb)",
     timestamp: ["8:34", "8:42"],
   },
 
   {
     actionName: "Tethers",
-    timestamp: ["8:44"],
+    timestamp: ["8:43"],
   },
   {
     actionName: "#1",
-    timestamp: ["8:46"],
+    timestamp: ["8:44"],
   },
   {
     actionName: "#2",
-    timestamp: ["8:48"],
+    timestamp: ["8:45"],
   },
   {
     actionName: "#3",
-    timestamp: ["8:50"],
+    timestamp: ["8:46"],
   },
   {
     actionName: "#4",
-    timestamp: ["8:52"],
+    timestamp: ["8:47"],
   },
 
   {
@@ -319,7 +401,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Tank buster (double)",
     timestamp: ["9:05", "9:10"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Tornados",
@@ -327,11 +409,27 @@ export const BossEvents: TimelineBossEvent[] = [
   },
   {
     actionName: "Flares + Stack",
-    timestamp: ["9:26", "9:34"],
+    timestamp: ["9:26", "9:32"],
+  },
+
+  {
+    actionName: "hit",
+    timestamp: ["9:33"],
+    type: "rw",
   },
   {
-    actionName: "Ground Smash",
+    actionName: "Knuckle Drum",
     timestamp: ["9:39", "9:46"],
+    type: "rw",
+  },
+  {
+    actionName: "Phase Change",
+    timestamp: ["9:51", "9:59"],
+  },
+  {
+    actionName: "phys rw",
+    timestamp: ["10:05"],
+    type: "rw",
   },
   {
     actionName: "Entanglement (playstation)",
@@ -350,8 +448,14 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["10:40", "10:44"],
   },
   {
+    actionName: "rw",
+    timestamp: ["10:45"],
+    type: "rw",
+  },
+  {
     actionName: "Void Aero IV",
     timestamp: ["10:55", "10:58"],
+    type: "rw",
   },
   {
     actionName: "Maelstrom (ENRAGE)",

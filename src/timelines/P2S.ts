@@ -11,7 +11,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Doubled Impact",
     timestamp: ["0:21", "0:26"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Sewage Deluge",
@@ -68,7 +68,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Doubled Impact (shared)",
     timestamp: ["3:17", "3:22"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Murky Depths",
@@ -105,7 +105,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Doubled Impact",
     timestamp: ["4:37", "4:42"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Murky Depths",
@@ -202,7 +202,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Doubled Impact (shared)",
     timestamp: ["7:29", "7:34"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Murkpy Depths",
@@ -271,7 +271,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Doubled Impact",
     timestamp: ["9:44", "9:49"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Murky Depths",

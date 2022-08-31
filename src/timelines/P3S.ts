@@ -11,7 +11,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     timestamp: ["0:17", "0:24"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Experimental Fireplume",
@@ -64,7 +64,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     timestamp: ["1:30", "1:38"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Scorched Exaltation",
@@ -93,7 +93,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     timestamp: ["2:23", "2:30"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Experimental Fireplume",
@@ -156,7 +156,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     timestamp: ["4:50", "4:55"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Fledgling Flight (teeth)",
@@ -193,7 +193,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Heat of Condemnation",
     timestamp: ["6:49", "6:54"],
-    tankBuster: true,
+    type: "tb",
   },
 
   // Firestorms (nados)

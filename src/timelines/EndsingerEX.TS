@@ -31,7 +31,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Hubris (double tb)",
     timestamp: ["1:19", "1:23"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Elegeia Unforgotten",
@@ -76,7 +76,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Hubris (double tb)",
     timestamp: ["3:28", "3:33"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Despair Unforgotten #1",
@@ -129,7 +129,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Hubris",
     timestamp: ["6:08", "6:12"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Elegeia Unforgotten",
@@ -202,7 +202,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Hubris",
     timestamp: ["8:55", "8:59"],
-    tankBuster: true,
+    type: "tb",
   },
   {
     actionName: "Endsong's Aporrhoia",

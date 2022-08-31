@@ -13,7 +13,7 @@ export type TimelineBossEvent = {
     | string
     | [string]
     | [string, string];
-  tankBuster?: boolean;
+  type?: "tb" | "rw" | "normal";
 };
 
 export type TimelineEvent = TimelinePlayerEvent | TimelineBossEvent;
