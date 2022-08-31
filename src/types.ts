@@ -25,7 +25,7 @@ export type Timeline = {
   playerEventsByJob: Partial<Record<Job, TimelinePlayerEvent[]>>;
 };
 
-export type Job = "SCH" | "AST";
+export type Job = "SCH" | "AST" | "BRD" | "PLD";
 
 export type XIVAPISearchSuccessResponse<T> = {
   Pagination: {
