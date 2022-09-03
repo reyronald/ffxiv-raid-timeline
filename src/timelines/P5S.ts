@@ -1,6 +1,6 @@
 import { TimelineBossEvent, TimelinePlayerEvent } from "../types";
 
-export const zoneID = 990;
+export const zoneID = 1082;
 export const zoneName = "P5S";
 
 export const BossEvents: TimelineBossEvent[] = [
@@ -109,7 +109,7 @@ export const BossEvents: TimelineBossEvent[] = [
     type: "tb",
   },
   {
-    actionName: "Venom Surge (light parties)",
+    actionName: "Venom Squall (spread) / Surge (light parties)",
     timestamp: ["3:26", "3:31"],
   },
   {
@@ -170,7 +170,7 @@ export const BossEvents: TimelineBossEvent[] = [
     type: "rw",
   },
   {
-    actionName: "Raging Claw",
+    actionName: "Raging Claw / Searing Ray",
     timestamp: ["5:13", "5:17"],
   },
   {
@@ -193,7 +193,7 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["5:55", "6:02"],
   },
   {
-    actionName: "Venom Squall",
+    actionName: "Venom Squall (spread) / Surge (lp)",
     timestamp: ["6:09", "6:13"],
     type: "normal",
   },
@@ -274,7 +274,7 @@ export const BossEvents: TimelineBossEvent[] = [
     type: "rw",
   },
   {
-    actionName: "Venom Surge (light parties)",
+    actionName: "Venom Surge (light parties) / Squall (spread)",
     timestamp: ["8:27", "8:31"],
   },
   {
