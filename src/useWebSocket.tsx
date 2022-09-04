@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { WebSocketMessage } from "./types";
 
 export function useWebSocket() {
   const [zoneID, setZoneID] = useState<number | null>(null);
   const [zoneName, setZoneName] = useState<string | null>(null);
   const [isCombatActive, setIsCombatActive] = useState(false);
+
+  const combatActiveTimestampRef = useRef<number | null>(null);
 
   useEffect(() => {
     const socket = new WebSocket(`ws://127.0.0.1:10501/BeforeLogLineRead`);
@@ -21,7 +23,9 @@ export function useWebSocket() {
 
     // https://github.com/quisquous/cactbot/blob/main/docs/LogGuide.md
     // Listen for messages
-    socket.addEventListener("message", function (event) {
+    socket.addEventListener("message", onMessage);
+
+    function onMessage(event: MessageEvent<any>) {
       const parsed: WebSocketMessage = JSON.parse(event.data);
 
       // console.log(parsed);
@@ -58,9 +62,35 @@ export function useWebSocket() {
       }
 
       if (parsed.msgtype === "CombatData") {
-        setIsCombatActive(parsed.msg.isActive === "true");
+        setIsCombatActive((prev) => {
+          const currentMessageIsActive = parsed.msg.isActive === "true";
+
+          const now = Date.now();
+
+          if (prev && !currentMessageIsActive) {
+            if (combatActiveTimestampRef.current == null) {
+              combatActiveTimestampRef.current = now;
+            } else {
+              if (now - combatActiveTimestampRef.current > 14000) {
+                combatActiveTimestampRef.current = null;
+                return false;
+              }
+            }
+          } else {
+            combatActiveTimestampRef.current = null;
+            return currentMessageIsActive;
+          }
+
+          return prev;
+        });
       }
-    });
+    }
+
+    // window.__app.onMessage = (isActive: boolean) => {
+    //   onMessage({
+    //     data: `{ "msgtype": "CombatData", "msg": { "isActive": "${isActive.toString()}" } }`,
+    //   });
+    // };
 
     return () => {
       socket.close();
