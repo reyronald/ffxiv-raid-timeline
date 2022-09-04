@@ -189,7 +189,7 @@ export const BossEvents: TimelineBossEvent[] = [
     type: "rw",
   },
   {
-    actionName: "Topaz Stones",
+    actionName: "Topaz Stones (group split)",
     timestamp: ["5:55", "6:02"],
   },
   {
@@ -207,8 +207,13 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["6:21"],
   },
   {
+    actionName: "drop",
+    timestamp: ["6:26"],
+    type: "rw",
+  },
+  {
     actionName: "Tower",
-    timestamp: ["6:35", "6:39"],
+    timestamp: ["6:28", "6:37"],
     type: "normal",
   },
   {
@@ -300,13 +305,48 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["8:59", "9:04"],
     type: "tb",
   },
+  {
+    actionName: "Toxic Crunch",
+    timestamp: ["9:06", "9:10"],
+    type: "tb",
+  },
+  {
+    actionName: "Sonic Shatter",
+    timestamp: ["9:20", "9:24"],
+    type: "rw",
+  },
+  {
+    actionName: "1",
+    timestamp: ["9:29"],
+    type: "rw",
+  },
+  {
+    actionName: "2",
+    timestamp: ["9:32"],
+    type: "rw",
+  },
+  {
+    actionName: "3",
+    timestamp: ["9:35"],
+    type: "rw",
+  },
+  {
+    actionName: "4",
+    timestamp: ["9:39"],
+    type: "rw",
+  },
+  {
+    actionName: "Acidic Slaver (ENRAGE)",
+    timestamp: ["9:53", "9:57"],
+    type: "rw",
+  },
 ];
 
 /**
  * 
   {
     actionName: "",
-    timestamp: ["8:00", "8:00"],
+    timestamp: ["9:00", "9:00"],
     type: "normal",
   },
  */
