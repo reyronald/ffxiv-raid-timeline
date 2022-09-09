@@ -317,21 +317,26 @@ export const BossEvents: TimelineBossEvent[] = [
   },
   {
     actionName: "1",
-    timestamp: ["9:29"],
+    timestamp: ["9:26"],
     type: "rw",
   },
   {
     actionName: "2",
-    timestamp: ["9:32"],
+    timestamp: ["9:29"],
     type: "rw",
   },
   {
     actionName: "3",
-    timestamp: ["9:35"],
+    timestamp: ["9:32"],
     type: "rw",
   },
   {
     actionName: "4",
+    timestamp: ["9:35"],
+    type: "rw",
+  },
+  {
+    actionName: "5",
     timestamp: ["9:39"],
     type: "rw",
   },
@@ -351,4 +356,366 @@ export const BossEvents: TimelineBossEvent[] = [
   },
  */
 
-export const SCHEvents: TimelinePlayerEvent[] = [];
+export const PLDEvents: TimelinePlayerEvent[] = [
+  // #region Iron Will
+  {
+    actionName: "Iron Will",
+    timestamp: ["0:41"],
+    type: "gcd",
+  },
+  // #endregion Reprisal
+
+  // #region Reprisal
+  {
+    actionName: "Reprisal",
+    timestamp: ["0:12"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["1:51"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["4:44"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["5:49"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["7:14"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["8:21"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["9:23"],
+    type: "gcd",
+  },
+  // #endregion Reprisal
+
+  // #region Passage of Arms
+  // Recast 120s
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["0:19"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["2:22"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["4:50"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["7:20"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["9:34"],
+    type: "gcd",
+  },
+  // #endregion Passage of Arms
+
+  // #region Divine Veil
+  // Recast 90s
+  {
+    actionName: "Divine Veil",
+    timestamp: ["1:42"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["3:37"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["5:54"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["7:36"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["9:30"],
+    type: "gcd",
+  },
+  // #endregion Divine Veil
+
+  // #region Rampart
+  // Recast 90s
+  {
+    actionName: "Rampart",
+    timestamp: ["1:28"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["5:26"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["7:57"],
+    type: "gcd",
+  },
+  // #endregion Rampart
+
+  // #region Sentinel
+  // Recast 120s
+  {
+    actionName: "Sentinel",
+    timestamp: ["0:50"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["3:07"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["6:51"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["8:58"],
+    type: "gcd",
+  },
+  // #endregion Sentinel
+
+  // #region Provoke
+  {
+    actionName: "Provoke",
+    timestamp: ["0:52"],
+    type: "gcd",
+  },
+  {
+    actionName: "Provoke",
+    timestamp: ["3:09"],
+    type: "gcd",
+  },
+  {
+    actionName: "Provoke",
+    timestamp: ["6:53"],
+    type: "gcd",
+  },
+  {
+    actionName: "Provoke",
+    timestamp: ["9:00"],
+    type: "gcd",
+  },
+  // #endregion Provoke
+
+  // #region Shirk
+  {
+    actionName: "Shirk",
+    timestamp: ["1:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Shirk",
+    timestamp: ["5:28"],
+    type: "gcd",
+  },
+  {
+    actionName: "Shirk",
+    timestamp: ["7:59"],
+    type: "gcd",
+  },
+  // #endregion Provoke
+
+  // #region Arm's Length
+  {
+    actionName: "Arm's Length",
+    timestamp: ["2:10"],
+    type: "gcd",
+  },
+  {
+    actionName: "Arm's Length",
+    timestamp: ["7:50"],
+    type: "gcd",
+  },
+  // #endregion Arm's Length
+];
+
+export const BRDEvents: TimelinePlayerEvent[] = [
+  // Troubadour
+  // #region
+  {
+    actionName: "Troubadour",
+    timestamp: ["0:12"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["2:14"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["4:43"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["7:13"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["9:26"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Iron Jaws
+  // #region
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["1:06"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["1:51"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["2:36"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["3:57"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["4:42"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["5:27"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["6:13"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["6:58"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["7:43"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["8:28"],
+    type: "gcd",
+  },
+  {
+    actionName: "Iron Jaws",
+    timestamp: ["9:13"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Army's Paeon
+  // #region
+  {
+    actionName: "Army's Paeon",
+    timestamp: ["1:21"],
+    type: "gcd",
+  },
+  {
+    actionName: "Army's Paeon",
+    timestamp: ["3:24"],
+    type: "gcd",
+  },
+  {
+    actionName: "Army's Paeon",
+    timestamp: ["5:54"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Raging Strikes
+  // #region
+  {
+    actionName: "Raging Strikes",
+    timestamp: ["2:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Raging Strikes",
+    timestamp: ["4:26"],
+    type: "gcd",
+  },
+  {
+    actionName: "Raging Strikes",
+    timestamp: ["6:34"],
+    type: "gcd",
+  },
+  {
+    actionName: "Raging Strikes",
+    timestamp: ["8:34"],
+    type: "gcd",
+  },
+  {
+    actionName: "Battle Voice",
+    timestamp: ["4:29"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Arm's Length
+  // #region
+  {
+    actionName: "Arm's Length",
+    timestamp: ["2:10"],
+    type: "gcd",
+  },
+  {
+    actionName: "Arm's Length",
+    timestamp: ["7:50"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Nature's Minne
+  // #region
+  {
+    actionName: "Nature's Minne",
+    timestamp: ["1:00"],
+    type: "gcd",
+  },
+  // #endregion
+];
