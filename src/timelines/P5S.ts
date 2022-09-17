@@ -363,7 +363,7 @@ export const PLDEvents: TimelinePlayerEvent[] = [
     timestamp: ["0:41"],
     type: "gcd",
   },
-  // #endregion Reprisal
+  // #endregion Iron Will
 
   // #region Reprisal
   {

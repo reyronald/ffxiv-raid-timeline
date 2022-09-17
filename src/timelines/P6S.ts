@@ -1,6 +1,6 @@
 import { TimelineBossEvent, TimelinePlayerEvent } from "../types";
 
-export const zoneID = 991;
+export const zoneID = 1084;
 export const zoneName = "P6S";
 
 interface P6BossEvents extends TimelineBossEvent {
@@ -24,9 +24,11 @@ interface P6BossEvents extends TimelineBossEvent {
     | "Ptera Ixou"
     | "Aetheric Polyominoid"
     | "Dark Sphere"
+    | "Dark IV (ENRAGE)"
 
     // others
     | "hit"
+    | "lp"
     | "1"
     | "2"
     | "3"
@@ -54,14 +56,14 @@ export const BossEvents: P6BossEvents[] = [
   },
   {
     actionName: "Unholy Darkness",
-    timestamp: ["0:45", "0:48"],
+    timestamp: ["0:44", "0:48"],
   },
   {
     actionName: "Exocleaver",
     timestamp: ["0:50", "0:53"],
   },
   {
-    actionName: "hit",
+    actionName: "lp",
     timestamp: ["0:57"],
     type: "rw",
   },
@@ -111,7 +113,12 @@ export const BossEvents: P6BossEvents[] = [
   },
   {
     actionName: "Choros Ixou",
-    timestamp: ["1:47", "1:50"],
+    timestamp: ["1:46", "1:50"],
+  },
+  {
+    actionName: "hit",
+    timestamp: ["1:51"],
+    type: "rw",
   },
   {
     actionName: "2",
@@ -119,7 +126,7 @@ export const BossEvents: P6BossEvents[] = [
   },
   {
     actionName: "Synergy (double)",
-    timestamp: ["2:02", "2:08"],
+    timestamp: ["2:01", "2:08"],
     type: "tb",
   },
   {
@@ -165,7 +172,12 @@ export const BossEvents: P6BossEvents[] = [
   },
   {
     actionName: "Exocleaver",
-    timestamp: ["3:40", "3:42"],
+    timestamp: ["3:39", "3:42"],
+  },
+  {
+    actionName: "lp",
+    timestamp: ["3:43"],
+    type: "rw",
   },
   {
     actionName: "2",
@@ -194,12 +206,22 @@ export const BossEvents: P6BossEvents[] = [
     timestamp: ["4:31", "4:34"],
   },
   {
+    actionName: "lp",
+    timestamp: ["4:40"],
+    type: "rw",
+  },
+  {
     actionName: "Dark Ashes (spread)",
     timestamp: ["4:49", "4:55"],
   },
   {
     actionName: "Choros Ixou",
     timestamp: ["4:57", "5:01"],
+  },
+  {
+    actionName: "hit",
+    timestamp: ["5:02"],
+    type: "rw",
   },
   {
     actionName: "2",
@@ -240,10 +262,12 @@ export const BossEvents: P6BossEvents[] = [
   {
     actionName: "Synergy (double)",
     timestamp: ["6:05", "6:10"],
+    type: "tb",
   },
   {
     actionName: "Dark IV",
     timestamp: ["6:18", "6:23"],
+    type: "rw",
   },
   {
     actionName: "Aetheric Polyominoid",
@@ -256,6 +280,7 @@ export const BossEvents: P6BossEvents[] = [
   {
     actionName: "1",
     timestamp: ["6:47"],
+    type: "rw",
   },
   {
     actionName: "2",
@@ -272,6 +297,11 @@ export const BossEvents: P6BossEvents[] = [
   {
     actionName: "Choros Ixou",
     timestamp: ["7:12", "7:15"],
+  },
+  {
+    actionName: "1",
+    timestamp: ["7:16"],
+    type: "rw",
   },
   {
     actionName: "2",
@@ -296,6 +326,7 @@ export const BossEvents: P6BossEvents[] = [
   {
     actionName: "Synergy (double)",
     timestamp: ["7:57", "8:03"],
+    type: "tb",
   },
   {
     actionName: "Dark IV",
@@ -348,8 +379,18 @@ export const BossEvents: P6BossEvents[] = [
   },
   {
     actionName: "Chelic Synergy",
-    timestamp: ["10:01", "9:07"],
+    timestamp: ["10:00", "10:06"],
     type: "tb",
+  },
+  {
+    actionName: "Dark IV",
+    timestamp: ["10:15", "10:19"],
+    type: "rw",
+  },
+  {
+    actionName: "Dark IV (ENRAGE)",
+    timestamp: ["10:29", "10:41"],
+    type: "rw",
   },
   // https://www.youtube.com/watch?v=IV29SDZ54nM&ab_channel=woops
 ];
@@ -362,4 +403,166 @@ export const BossEvents: P6BossEvents[] = [
     },
 */
 
-export const SCHEvents: TimelinePlayerEvent[] = [];
+export const BRDEvents: TimelinePlayerEvent[] = [
+  // Troubadour
+  // #region
+  // Recast 90s
+  {
+    actionName: "Troubadour",
+    timestamp: ["0:44"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["2:16"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["4:29"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["7:04"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["10:15"],
+    type: "gcd",
+  },
+  // #endregion
+];
+
+export const PLDEvents: TimelinePlayerEvent[] = [
+  // #region Iron Will
+  {
+    actionName: "Iron Will",
+    timestamp: ["0:41"],
+    type: "gcd",
+  },
+  // #endregion Iron Will
+
+  // #region Reprisal
+  {
+    actionName: "Reprisal",
+    timestamp: ["0:20"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["2:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["4:05"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["6:04"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["8:10"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["10:12"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Passage of Arms
+  // Recast 120s
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["0:10"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["2:17"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["6:20"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["10:16"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Divine Veil
+  // Recast 90s
+  {
+    actionName: "Divine Veil",
+    timestamp: ["0:34"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["3:23"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["6:52"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["9:55"],
+    type: "gcd",
+  },
+  // 8:22
+  // #endregion
+
+  // #region Rampart
+  // Recast 90s
+  {
+    actionName: "Rampart",
+    timestamp: ["1:57"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["6:01"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["7:55"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Sentinel
+  // Recast 120s
+  {
+    actionName: "Sentinel",
+    timestamp: ["1:59"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["5:58"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["8:00"],
+    type: "gcd",
+  },
+  // #endregion
+
+  //...
+];
