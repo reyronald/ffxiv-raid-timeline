@@ -1,6 +1,6 @@
 import { TimelineBossEvent, TimelinePlayerEvent } from "../types";
 
-export const zoneID = 1234;
+export const zoneID = 1086;
 export const zoneName = "P7S";
 
 interface P7BossEvents extends TimelineBossEvent {
@@ -47,7 +47,7 @@ export const BossEvents: P7BossEvents[] = [
   {
     actionName: "Immortal's Obol",
     timestamp: ["0:36", "0:43"],
-    type: "normal",
+    type: "rw",
   },
   {
     actionName: "Forbidden Fruit",
@@ -90,7 +90,7 @@ export const BossEvents: P7BossEvents[] = [
   },
   {
     actionName: "hit",
-    timestamp: ["2:02"],
+    timestamp: ["2:01"],
     type: "rw",
   },
   {
@@ -331,4 +331,42 @@ export const BossEvents: P7BossEvents[] = [
     },
 */
 
-export const SCHEvents: TimelinePlayerEvent[] = [];
+export const BRDEvents: TimelinePlayerEvent[] = [
+  // Troubadour
+  // #region
+  {
+    actionName: "Troubadour",
+    timestamp: ["1:59"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["3:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["5:02"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["7:29"],
+    type: "gcd",
+  },
+  {
+    actionName: "Troubadour",
+    timestamp: ["9:52"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // Potions
+  {
+    actionName: "Grade 7 Tincture of Dexterity",
+    type: "gcd",
+    timestamp: ["6:13"],
+  },
+];
+
+export const PLDEvents: TimelinePlayerEvent[] = [];
