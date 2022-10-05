@@ -76,10 +76,10 @@ function useActionIcon(actionName: string) {
           IsPvP: 0 | 1;
         }>
       >({
-        fn: () =>
-          fetch(
-            `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch,ClassJobLevel,IsPvP`
-          ).then((r) => r.json()),
+        fn: () => {
+          const url = `https://xivapi.com/search?string=${actionName}&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch,ClassJobLevel,IsPvP`;
+          return fetch(url).then((r) => r.json());
+        },
         shouldRetry: (r) => "Error" in r && r.ExCode === 429,
         retryCount: 3,
       }).then((response) => {
@@ -95,7 +95,7 @@ function useActionIcon(actionName: string) {
             (r) => r.Icon !== "/i/000000/000405.png"
           )
             .filter((r) => !r.IsPvP)
-            .filter((r) => r.ClassJobLevel > 0)
+            .filter((r) => r.ClassJobLevel > 0 || r.ClassJobLevel == null)
             .sort((a, b) => b.Patch - a.Patch);
           const [result] = results;
           if (result) {

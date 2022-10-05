@@ -31,7 +31,9 @@ function App() {
       : timelines && "zoneName" in timelines[0]
       ? timelines[0].zoneName
       : "";
-  const zoneName = zoneNameFromACT || zoneNameFromStore;
+  const zoneName = zoneNameFromACT
+    ? `${zoneNameFromACT} (id: ${zoneID})`
+    : zoneNameFromStore;
 
   return (
     <main className={clsx("App", overlay && "App--overlay")}>
