@@ -557,6 +557,18 @@ export const PLDEvents: TimelinePlayerEvent[] = [
     type: "gcd",
   },
   // #endregion Arm's Length
+
+  // Potions
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["2:13"],
+  },
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["8:30"],
+  },
 ];
 
 export const BRDEvents: TimelinePlayerEvent[] = [
@@ -718,4 +730,16 @@ export const BRDEvents: TimelinePlayerEvent[] = [
     type: "gcd",
   },
   // #endregion
+
+  // Potions
+  {
+    actionName: "Grade 7 Tincture of Dexterity",
+    type: "gcd",
+    timestamp: ["2:13"],
+  },
+  {
+    actionName: "Grade 7 Tincture of Dexterity",
+    type: "gcd",
+    timestamp: ["8:30"],
+  },
 ];

@@ -64,6 +64,16 @@ function useActionIcon(actionName: string) {
       const path = "/i/000000/000866.png";
       setIcon(path);
       iconCache.set(actionName, Promise.resolve(path));
+    } else if (actionName.includes("Tincture of Dexterity")) {
+      // https://xivapi.com/i/020000/020709.png
+      const path = "/i/020000/020709.png";
+      setIcon(path);
+      iconCache.set(actionName, Promise.resolve(path));
+    } else if (actionName.includes("Tincture of Strength")) {
+      // https://xivapi.com/i/020000/020710.png
+      const path = "/i/020000/020710.png";
+      setIcon(path);
+      iconCache.set(actionName, Promise.resolve(path));
     } else {
       // e.g. https://xivapi.com/search?string=Surecast&indexes=Action,Item&columns=ID,Icon,Name,Url,UrlType,Patch,ClassJobTargetID,IsPvP
       const promise = exponentialBackoff<
@@ -95,7 +105,7 @@ function useActionIcon(actionName: string) {
             (r) => r.Icon !== "/i/000000/000405.png"
           )
             .filter((r) => !r.IsPvP)
-            .filter((r) => r.ClassJobLevel > 0 || r.ClassJobLevel == null)
+            .filter((r) => r.ClassJobLevel > 0)
             .sort((a, b) => b.Patch - a.Patch);
           const [result] = results;
           if (result) {

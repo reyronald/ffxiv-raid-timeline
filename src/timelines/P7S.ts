@@ -85,7 +85,7 @@ export const BossEvents: P7BossEvents[] = [
   },
   {
     actionName: "Bough of Attis",
-    timestamp: ["1:55", "2:01"],
+    timestamp: ["1:55", "2:00"],
     type: "normal",
   },
   {
@@ -321,6 +321,11 @@ export const BossEvents: P7BossEvents[] = [
     timestamp: ["10:37", "10:41"],
     type: "rw",
   },
+  {
+    actionName: "Spark of Life",
+    timestamp: ["10:50", "10:54"],
+    type: "rw",
+  },
 ];
 
 /*
@@ -336,7 +341,7 @@ export const BRDEvents: TimelinePlayerEvent[] = [
   // #region
   {
     actionName: "Troubadour",
-    timestamp: ["1:59"],
+    timestamp: ["1:58"],
     type: "gcd",
   },
   {
@@ -365,8 +370,351 @@ export const BRDEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Grade 7 Tincture of Dexterity",
     type: "gcd",
-    timestamp: ["6:13"],
+    timestamp: ["2:00"],
+  },
+  {
+    actionName: "Grade 7 Tincture of Dexterity",
+    type: "gcd",
+    timestamp: ["8:20"],
   },
 ];
 
-export const PLDEvents: TimelinePlayerEvent[] = [];
+export const PLDEventsReprisalAoE: TimelinePlayerEvent[] = [
+  // #region Reprisal
+  {
+    actionName: "Reprisal",
+    timestamp: ["0:08"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["1:35"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["3:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["4:40"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["5:52"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["7:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["8:44"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["10:00"],
+    type: "gcd",
+  },
+  // #endregion Reprisal
+
+  // #region Passage of Arms
+  // Recast 120s
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["1:38"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["5:58"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["10:01"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Divine Veil
+  // Recast 90s
+  {
+    actionName: "Divine Veil",
+    timestamp: ["0:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["2:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["3:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["5:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["6:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["8:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["10:10"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Rampart
+  // Recast 90s
+  {
+    actionName: "Rampart",
+    timestamp: ["0:19"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["2:29"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["5:16"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Sentinel
+  // Recast 120s
+  {
+    actionName: "Sentinel",
+    timestamp: ["1:24"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["4:10"],
+    type: "gcd",
+  },
+  // #endregion
+
+  {
+    actionName: "(no more hallowed ground)",
+    timestamp: ["2:10"],
+    type: "ogcd",
+  },
+
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["0:19.7"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["1:24.7"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["9:16"],
+    type: "gcd",
+  },
+
+  // Potions
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["2:00"],
+  },
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["8:00"],
+  },
+];
+
+export const PLDEventsReprisalTB: TimelinePlayerEvent[] = [
+  // #region Reprisal
+  {
+    actionName: "Reprisal",
+    timestamp: ["0:17"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["1:22"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["2:27"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["4:08"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["5:14"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["7:07"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["9:13"],
+    type: "gcd",
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["10:22"],
+    type: "gcd",
+  },
+  // #endregion Reprisal
+
+  // #region Passage of Arms
+  // Recast 120s
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["1:38"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["5:58"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["10:01"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Divine Veil
+  // Recast 90s
+  {
+    actionName: "Divine Veil",
+    timestamp: ["0:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["2:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["3:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["5:00"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["6:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["8:30"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["10:10"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Rampart
+  // Recast 90s
+  {
+    actionName: "Rampart",
+    timestamp: ["0:19"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["2:29"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["5:16"],
+    type: "gcd",
+  },
+  // #endregion
+
+  // #region Sentinel
+  // Recast 120s
+  {
+    actionName: "Sentinel",
+    timestamp: ["1:24"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sentinel",
+    timestamp: ["4:10"],
+    type: "gcd",
+  },
+  // #endregion
+
+  {
+    actionName: "(no more hallowed ground)",
+    timestamp: ["2:10"],
+    type: "ogcd",
+  },
+
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["0:19.7"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["1:24.7"],
+    type: "ogcd",
+  },
+  {
+    actionName: "Hallowed Ground",
+    timestamp: ["9:16"],
+    type: "gcd",
+  },
+
+  // Potions
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["2:00"],
+  },
+  {
+    actionName: "Grade 7 Tincture of Strength",
+    type: "gcd",
+    timestamp: ["8:20"],
+  },
+];

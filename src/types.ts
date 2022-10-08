@@ -22,7 +22,7 @@ export type Timeline = {
   zoneID: number;
   zoneName: string;
   bossEvents: TimelineBossEvent[];
-  playerEventsByJob: Partial<Record<Job, TimelinePlayerEvent[]>>;
+  playerEventsByJob: Partial<Record<string, TimelinePlayerEvent[]>>;
 };
 
 export type Job = "SCH" | "AST" | "BRD" | "PLD";

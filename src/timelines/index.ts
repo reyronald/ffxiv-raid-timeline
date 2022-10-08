@@ -96,7 +96,8 @@ export const Timelines: TimelinesByZoneID = {
     bossEvents: P7S.BossEvents,
     playerEventsByJob: {
       BRD: P7S.BRDEvents,
-      PLD: P7S.PLDEvents,
+      "PLD Reprisal AoE": P7S.PLDEventsReprisalAoE,
+      "PLD Reprisal TB": P7S.PLDEventsReprisalTB,
     },
   },
   [P8Sp1.zoneID]: [
