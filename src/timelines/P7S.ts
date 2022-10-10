@@ -451,7 +451,7 @@ export const PLDEventsReprisalAoE: TimelinePlayerEvent[] = [
   },
   {
     actionName: "Divine Veil",
-    timestamp: ["2:00"],
+    timestamp: ["1:59"],
     type: "gcd",
   },
   {
@@ -621,7 +621,7 @@ export const PLDEventsReprisalTB: TimelinePlayerEvent[] = [
   },
   {
     actionName: "Divine Veil",
-    timestamp: ["2:00"],
+    timestamp: ["1:59"],
     type: "gcd",
   },
   {
