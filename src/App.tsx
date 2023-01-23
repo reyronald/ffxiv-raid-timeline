@@ -14,7 +14,7 @@ if (overlay) {
   document.body.classList.add("in-overlay");
 }
 
-const defaultZone = TimelineObjects.P7S.zoneID;
+const defaultZone = TimelineObjects.P4S.zoneID;
 
 function App() {
   const { zoneID, zoneName: zoneNameFromACT, isCombatActive } = useWebSocket();

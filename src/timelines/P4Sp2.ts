@@ -8,6 +8,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Searing Stream",
     timestamp: ["0:10", "0:15"],
+    type: "rw",
   },
   {
     actionName: "Akanthai: Act 1",
@@ -16,6 +17,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Searing Stream",
     timestamp: ["0:35", "0:39"],
+    type: "rw",
   },
   {
     actionName: "Wreath of Thorns",
@@ -69,6 +71,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Ultimate Impulse",
     timestamp: ["2:02", "2:09"],
+    type: "rw",
   },
   // #endregion
 
@@ -121,6 +124,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Searing Stream",
     timestamp: ["3:38", "3:42"],
+    type: "rw",
   },
   {
     actionName: "Wreath of Thorns",
@@ -129,15 +133,18 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Searing Stream",
     timestamp: ["3:55", "4:00"],
+    type: "rw",
   },
   // ...
   {
     actionName: "Ulitmate Impulse",
     timestamp: ["4:28", "4:35"],
+    type: "rw",
   },
   {
     actionName: "Searing Stream",
     timestamp: ["4:45", "4:49"],
+    type: "rw",
   },
   // #endregion Act 4
 
@@ -234,6 +241,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Searing Stream",
     timestamp: ["6:00", "6:04"],
+    type: "rw",
   },
   {
     actionName: "Demigod Double",
@@ -273,6 +281,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Ultimate Impulse",
     timestamp: ["7:13", "7:19"],
+    type: "rw",
   },
   // ...
   {
@@ -295,10 +304,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Ultimate Impulse",
     timestamp: ["8:03", "8:09"],
+    type: "rw",
   },
   {
     actionName: "Ultimate Impulse (ENRAGE)",
     timestamp: ["8:14", "8:24"],
+    type: "rw",
   },
   // #endregion Curtain Call
 ];

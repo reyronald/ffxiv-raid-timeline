@@ -8,10 +8,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Decollation",
     timestamp: ["0:10", "0:14"],
+    type: "rw",
   },
   {
     actionName: "Bloodrake",
     timestamp: ["0:19", "0:22"],
+    type: "rw",
   },
   {
     actionName: "Aetheric Chlamys",
@@ -20,6 +22,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Bloodrake",
     timestamp: ["0:34", "0:37"],
+    type: "rw",
   },
   {
     actionName: "Director's Belone",
@@ -32,6 +35,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Decollation",
     timestamp: ["1:08", "1:12"],
+    type: "rw",
   },
   {
     actionName: "Elegant Evisceration",
@@ -54,40 +58,33 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["1:48", "1:53"],
   },
   {
-    actionName: "Pinax #1",
-    timestamp: ["1:54", "2:03"],
-  },
-  {
     actionName: "#1 (hit)",
     timestamp: ["2:03"],
-  },
-  {
-    actionName: "Pinax #2",
-    timestamp: ["1:57", "2:06"],
+    type: "rw",
   },
   {
     actionName: "#2 (hit)",
     timestamp: ["2:06"],
-  },
-  {
-    actionName: "Pinax #3",
-    timestamp: ["2:07", "2:16"],
-  },
-  {
-    actionName: "#3 (hit)",
-    timestamp: ["2:16"],
+    type: "rw",
   },
   {
     actionName: "Cardinal Shift",
     timestamp: ["2:11", "2:19"],
   },
   {
-    actionName: "Pinax #4",
-    timestamp: ["2:18", "2:27"],
+    actionName: "#3 (hit)",
+    timestamp: ["2:16"],
+    type: "rw",
+  },
+  {
+    actionName: "shift hit",
+    timestamp: ["2:19"],
+    type: "rw",
   },
   {
     actionName: "#4 (hit)",
     timestamp: ["2:27"],
+    type: "rw",
   },
   {
     actionName: "Elegant Evisceration",
@@ -104,6 +101,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Bloodrake",
     timestamp: ["2:44", "2:47"],
+    type: "rw",
+  },
+  {
+    actionName: "hit",
+    timestamp: ["2:48"],
+    type: "rw",
   },
   {
     actionName: "Setting the Scene",
@@ -120,6 +123,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Bloodrake",
     timestamp: ["3:24", "3:27"],
+    type: "rw",
   },
   {
     actionName: "Belone Burst (orbs)",
@@ -128,10 +132,12 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Periaktoi",
     timestamp: ["3:46", "3:50"],
+    type: "rw",
   },
   {
     actionName: "Bloodrake",
     timestamp: ["3:59", "4:02"],
+    type: "rw",
   },
   {
     actionName: "Belone Coils",
@@ -152,6 +158,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Bloodrake",
     timestamp: ["4:31", "4:35"],
+    type: "rw",
   },
   {
     actionName: "Belone Coils",
@@ -168,6 +175,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Decollation",
     timestamp: ["5:18", "5:23"],
+    type: "rw",
   },
   {
     actionName: "Elegant Evisceration",
@@ -190,40 +198,38 @@ export const BossEvents: TimelineBossEvent[] = [
     timestamp: ["5:59", "6:03"],
   },
   {
-    actionName: "Pinax #1",
-    timestamp: ["6:05", "6:14"],
+    actionName: "#1",
+    timestamp: ["6:14"],
+    type: "rw",
   },
   {
-    actionName: "Pinax #2",
-    timestamp: ["6:08", "6:17"],
-  },
-  {
-    actionName: "Pinax #3",
-    timestamp: ["6:18", "6:27"],
+    actionName: "#2",
+    timestamp: ["6:17"],
+    type: "rw",
   },
   {
     actionName: "Cardinal Shift",
     timestamp: ["6:21", "6:30"],
   },
   {
-    actionName: "Pinax #4",
-    timestamp: ["6:29", "6:38"],
-  },
-  {
     actionName: "Decollation",
     timestamp: ["6:38", "6:42"],
+    type: "rw",
   },
   {
     actionName: "Decollation",
     timestamp: ["6:47", "6:52"],
+    type: "rw",
   },
   {
     actionName: "Decollation",
     timestamp: ["6:56", "7:01"],
+    type: "rw",
   },
   {
     actionName: "ENRAGE",
     timestamp: ["7:05"],
+    type: "rw",
   },
 ];
 
