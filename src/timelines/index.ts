@@ -9,6 +9,7 @@ import * as P6S from "./P6S";
 import * as P7S from "./P7S";
 import * as P8Sp1 from "./P8Sp1";
 import * as P8Sp2 from "./P8Sp2";
+import * as P10S from "./P10S";
 import * as EndsingerEX from "./EndsingerEX";
 import * as BarbaricciaEX from "./BarbaricciaEX";
 
@@ -22,6 +23,7 @@ export const TimelineObjects = {
   P7S,
   P8Sp1,
   P8Sp2,
+  P10S,
   EndsingerEX,
   BarbaricciaEX,
 };
@@ -114,6 +116,14 @@ export const Timelines: TimelinesByZoneID = {
       playerEventsByJob: {},
     },
   ],
+  [P10S.zoneID]: {
+    zoneID: P10S.zoneID,
+    zoneName: P10S.zoneName,
+    bossEvents: P10S.BossEvents,
+    playerEventsByJob: {
+      PLD: P10S.PLDEvents,
+    },
+  },
   [EndsingerEX.zoneID]: {
     zoneID: EndsingerEX.zoneID,
     zoneName: EndsingerEX.zoneName,

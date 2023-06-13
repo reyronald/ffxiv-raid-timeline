@@ -16,6 +16,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["0:27", "0:32"],
+    type: "rw",
   },
   {
     actionName: "Chain Pain",
@@ -57,6 +58,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["1:40", "1:45"],
+    type: "rw",
   },
   {
     actionName: "Intemperance",
@@ -73,6 +75,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["2:17", "2:22"],
+    type: "rw",
   },
   {
     actionName: "Painful Flux",
@@ -81,6 +84,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["2:27", "2:32"],
+    type: "rw",
   },
   {
     actionName: "Painful Flux",
@@ -98,6 +102,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Shining Cells",
     timestamp: ["3:02", "3:09"],
+    type: "rw",
   },
   {
     actionName: "Gaoler's Flail + Aetherflail",
@@ -152,6 +157,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Shackles of Time",
     timestamp: ["4:12", "4:16"],
+    type: "rw",
   },
   {
     actionName: "Heavy Hand",
@@ -189,6 +195,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["5:24", "5:29"],
+    type: "rw",
   },
   {
     actionName: "Intemperance",
@@ -225,6 +232,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["6:25", "6:30"],
+    type: "rw",
   },
   {
     actionName: "Shining Cells",
@@ -261,6 +269,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["7:23", "7:28"],
+    type: "rw",
   },
   {
     actionName: "Shackles of Time",
@@ -282,6 +291,7 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["8:00", "8:05"],
+    type: "rw",
   },
   {
     actionName: "Gaoler's Flail + Aetherflail",
@@ -346,18 +356,22 @@ export const BossEvents: TimelineBossEvent[] = [
   {
     actionName: "Warder's Wrath",
     timestamp: ["9:16", "9:21"],
+    type: "rw",
   },
   {
     actionName: "Warder's Wrath",
     timestamp: ["9:25", "9:30"],
+    type: "rw",
   },
   {
     actionName: "Warder's Wrath",
     timestamp: ["9:34", "9:39"],
+    type: "rw",
   },
   {
     actionName: "Lethe",
     timestamp: ["9:46", "9:58"],
+    type: "rw",
   },
 ];
 

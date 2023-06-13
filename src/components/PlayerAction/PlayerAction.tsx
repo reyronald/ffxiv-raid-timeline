@@ -20,7 +20,8 @@ export function PlayerAction({ event }: Props) {
     <div
       className={clsx(
         "PlayerAction",
-        event.type === "ogcd" && "PlayerAction--ogcd"
+        event.type === "ogcd" && "PlayerAction--ogcd",
+        event.opacity && "PlayerAction--opacity"
       )}
       title={iconUrl ? undefined : event.actionName}
     >

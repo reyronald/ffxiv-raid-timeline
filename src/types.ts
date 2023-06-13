@@ -2,6 +2,7 @@ export type TimelinePlayerEvent = {
   actionName: string;
   type: "gcd" | "ogcd";
   timestamp: [number | string];
+  opacity?: true;
 };
 
 export type TimelineBossEvent = {

@@ -21,7 +21,7 @@ export function Castbar({ event, event: { actionName, type } }: Props) {
         style={{ ["--duration" as any]: duration }}
       />
 
-      {actionName}
+      {actionName || <span style={{ visibility: "hidden" }}>...</span>}
     </div>
   );
 }
