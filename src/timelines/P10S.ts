@@ -1,10 +1,11 @@
 import { TimelineBossEvent, TimelinePlayerEvent } from "../types";
 
-export const zoneID = 1086;
+export const zoneID = 1150;
 export const zoneName = "P10S";
 
 interface P10BossEvents extends TimelineBossEvent {
   actionName:
+    | "Dividing Wings"
     | "Soul Grasp"
     | "Wicked Step"
     | "Pandemoniac Meltdown"
@@ -26,6 +27,16 @@ interface P10BossEvents extends TimelineBossEvent {
 }
 
 export const BossEvents: P10BossEvents[] = [
+  {
+    actionName: "Dividing Wings",
+    timestamp: ["00:31", "00:34"],
+    type: "rw",
+  },
+  {
+    actionName: "Wicked Step",
+    timestamp: ["01:02", "01:07"],
+    type: "tb",
+  },
   {
     actionName: "Pandemoniac Meltdown",
     timestamp: ["02:06", "02:12"],
@@ -203,13 +214,38 @@ export const PLDEvents: TimelinePlayerEvent[] = [
     timestamp: ["07:25"],
     type: "gcd",
   },
+  {
+    actionName: "Reprisal",
+    timestamp: ["09:30"],
+    type: "gcd",
+  },
 
   /**
    * Divine Veil
    */
   {
     actionName: "Divine Veil",
+    timestamp: ["00:31"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
     timestamp: ["02:16"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["05:14"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["07:05"],
+    type: "gcd",
+  },
+  {
+    actionName: "Divine Veil",
+    timestamp: ["09:12"],
     type: "gcd",
   },
 
@@ -218,7 +254,27 @@ export const PLDEvents: TimelinePlayerEvent[] = [
    */
   {
     actionName: "Passage of Arms",
+    timestamp: ["00:11"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
     timestamp: ["02:37"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["02:37"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["07:22"],
+    type: "gcd",
+  },
+  {
+    actionName: "Passage of Arms",
+    timestamp: ["10:25"],
     type: "gcd",
   },
 
@@ -232,7 +288,22 @@ export const PLDEvents: TimelinePlayerEvent[] = [
   },
   {
     actionName: "Rampart",
-    timestamp: ["02:47"],
+    timestamp: ["02:46"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["04:29"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["07:13"],
+    type: "gcd",
+  },
+  {
+    actionName: "Rampart",
+    timestamp: ["10:17"],
     type: "gcd",
   },
 
@@ -249,10 +320,25 @@ export const PLDEvents: TimelinePlayerEvent[] = [
     timestamp: ["07:14"],
     type: "gcd",
   },
+  {
+    actionName: "Sentinel",
+    timestamp: ["10:18"],
+    type: "gcd",
+  },
 
   /**
    * Bulwark
    */
+  {
+    actionName: "Bulwark",
+    timestamp: ["01:17"],
+    type: "gcd",
+  },
+  {
+    actionName: "Bulwark",
+    timestamp: ["02:47"],
+    type: "gcd",
+  },
   {
     actionName: "Bulwark",
     timestamp: ["04:33"],
@@ -355,7 +441,9 @@ export const PLDEvents: TimelinePlayerEvent[] = [
     type: "gcd",
   },
 
-  // Other tank
+  /**
+   * Other tank
+   */
   {
     actionName: "Reprisal",
     timestamp: ["04:34"],
@@ -365,6 +453,12 @@ export const PLDEvents: TimelinePlayerEvent[] = [
   {
     actionName: "Reprisal",
     timestamp: ["08:28"],
+    type: "ogcd",
+    opacity: true,
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["10:20"],
     type: "ogcd",
     opacity: true,
   },
