@@ -5,11 +5,19 @@ export const zoneName = "P10S";
 
 interface P10BossEvents extends TimelineBossEvent {
   actionName:
-    | "Dividing Wings"
-    | "Soul Grasp"
-    | "Wicked Step"
-    | "Pandemoniac Meltdown"
     | "Ultima"
+    | "Soul Grasp"
+    | "Dividing Wings"
+    | "Steel Web"
+    | "Holy / Circles of Pandaemonium"
+    | "Wicked Step"
+    | "Entrangling Web"
+    | "Pandaemoniac Pillars"
+    | "Pandemoniac Meltdown"
+    | "Touchdown"
+    | "Demoniac Bonds"
+    | "Pandemoniac Turrets"
+    | "Pandemoniac Ray"
     | "Silkspit"
     | "Harrowing Hell"
     | "Harrowing Hell (ENRAGE)"
@@ -20,6 +28,8 @@ interface P10BossEvents extends TimelineBossEvent {
     | "5"
     | "6"
     | "7"
+    | "Pandemoniac Web"
+    | "Parted Plumes"
     | "knockback"
     | "bonds 1"
     | "bonds 2"
@@ -28,9 +38,32 @@ interface P10BossEvents extends TimelineBossEvent {
 
 export const BossEvents: P10BossEvents[] = [
   {
+    actionName: "Ultima",
+    timestamp: ["00:08", "00:13"],
+    type: "rw",
+  },
+  {
+    actionName: "Soul Grasp",
+    timestamp: ["00:17", "00:22"],
+    type: "tb",
+  },
+  {
     actionName: "Dividing Wings",
     timestamp: ["00:31", "00:34"],
+  },
+  {
+    actionName: "Steel Web",
+    timestamp: ["00:37", "00:39"],
     type: "rw",
+  },
+  {
+    actionName: "Steel Web",
+    timestamp: ["00:49"],
+    type: "rw",
+  },
+  {
+    actionName: "Holy / Circles of Pandaemonium",
+    timestamp: ["00:54", "00:57"],
   },
   {
     actionName: "Wicked Step",
@@ -38,8 +71,45 @@ export const BossEvents: P10BossEvents[] = [
     type: "tb",
   },
   {
+    actionName: "Entrangling Web",
+    timestamp: ["01:14", "01:17"],
+  },
+  {
+    actionName: "Pandaemoniac Pillars",
+    timestamp: ["01:30", "01:36"],
+    type: "rw",
+  },
+  {
+    actionName: "Holy / Circles of Pandaemonium",
+    timestamp: ["01:38", "01:41"],
+  },
+  {
+    actionName: "Silkspit",
+    timestamp: ["01:45", "01:47"],
+    type: "rw",
+  },
+  {
+    actionName: "Silkspit",
+    timestamp: ["01:57"],
+    type: "rw",
+  },
+  {
+    actionName: "Demoniac Bonds",
+    timestamp: ["01:58", "02:01"],
+  },
+  {
     actionName: "Pandemoniac Meltdown",
     timestamp: ["02:06", "02:12"],
+    type: "rw",
+  },
+  {
+    actionName: "Touchdown",
+    timestamp: ["02:15", "02:23"],
+    type: "rw",
+  },
+  {
+    actionName: "",
+    timestamp: ["02:27"],
     type: "rw",
   },
   {
@@ -51,6 +121,46 @@ export const BossEvents: P10BossEvents[] = [
     actionName: "Soul Grasp",
     timestamp: ["02:43", "02:48"],
     type: "tb",
+  },
+  {
+    actionName: "Demoniac Bonds",
+    timestamp: ["03:00", "03:03"],
+  },
+  {
+    actionName: "Pandemoniac Turrets",
+    timestamp: ["03:08", "03:13"],
+  },
+  {
+    actionName: "1",
+    timestamp: ["03:25"],
+  },
+  {
+    actionName: "2",
+    timestamp: ["03:30"],
+  },
+  {
+    actionName: "3",
+    timestamp: ["03:34"],
+  },
+  {
+    actionName: "4",
+    timestamp: ["03:39"],
+  },
+  {
+    actionName: "",
+    timestamp: ["03:43"],
+  },
+  {
+    actionName: "",
+    timestamp: ["03:45"],
+  },
+  {
+    actionName: "Pandemoniac Ray",
+    timestamp: ["03:47", "03:52"],
+  },
+  {
+    actionName: "",
+    timestamp: ["03:55"],
   },
   {
     actionName: "Ultima",
@@ -69,14 +179,84 @@ export const BossEvents: P10BossEvents[] = [
     type: "tb",
   },
   {
+    actionName: "Entrangling Web",
+    timestamp: ["04:44", "04:46"],
+  },
+  {
+    actionName: "Silkspit",
+    timestamp: ["04:55", "04:57"],
+    type: "rw",
+  },
+  {
+    actionName: "Demoniac Bonds",
+    timestamp: ["05:03", "05:06"],
+  },
+  {
+    actionName: "",
+    timestamp: ["05:08"],
+    type: "rw",
+  },
+  {
+    actionName: "Pandaemoniac Pillars",
+    timestamp: ["05:10", "05:15"],
+  },
+  {
+    actionName: "Holy / Circles of Pandaemonium",
+    timestamp: ["05:17", "05:21"],
+  },
+  {
+    actionName: "Pandemoniac Ray",
+    timestamp: ["05:24", "05:27"],
+  },
+  {
+    actionName: "",
+    timestamp: ["05:28"],
+    type: "rw",
+  },
+  {
+    actionName: "",
+    timestamp: ["05:32"],
+    type: "rw",
+  },
+  {
+    actionName: "Dividing Wings",
+    timestamp: ["05:34", "05:36"],
+  },
+  {
+    actionName: "Steel Web",
+    timestamp: ["05:40", "05:43"],
+  },
+  {
+    actionName: "Touchdown",
+    timestamp: ["05:48", "05:54"],
+  },
+  {
+    actionName: "",
+    timestamp: ["05:55"],
+    type: "rw",
+  },
+  {
     actionName: "Pandemoniac Meltdown",
-    timestamp: ["06:10", "06:14"],
+    timestamp: ["06:09", "06:14"],
     type: "rw",
   },
   {
     actionName: "Soul Grasp",
     timestamp: ["06:18", "06:23"],
     type: "tb",
+  },
+  {
+    actionName: "Dividing Wings",
+    timestamp: ["06:40", "06:42"],
+  },
+  {
+    actionName: "Pandemoniac Web",
+    timestamp: ["06:46", "06:48"],
+  },
+  {
+    actionName: "",
+    timestamp: ["06:57"],
+    type: "rw",
   },
   {
     actionName: "Harrowing Hell",
@@ -135,6 +315,11 @@ export const BossEvents: P10BossEvents[] = [
   },
 
   {
+    actionName: "Ultima",
+    timestamp: ["07:53", "07:58"],
+    type: "rw",
+  },
+  {
     actionName: "Soul Grasp",
     timestamp: ["08:04", "08:09"],
     type: "tb",
@@ -145,6 +330,24 @@ export const BossEvents: P10BossEvents[] = [
     type: "tb",
   },
   {
+    actionName: "Entrangling Web",
+    timestamp: ["08:38", "08:40"],
+  },
+
+  {
+    actionName: "Parted Plumes",
+    timestamp: ["08:59", "09:01"],
+  },
+  {
+    actionName: "Pandemoniac Ray",
+    timestamp: ["09:09", "09:13"],
+  },
+  {
+    actionName: "Holy / Circles of Pandaemonium",
+    timestamp: ["09:17", "09:20"],
+  },
+
+  {
     actionName: "Silkspit",
     timestamp: ["09:24", "09:27"],
     type: "rw",
@@ -154,6 +357,15 @@ export const BossEvents: P10BossEvents[] = [
     timestamp: ["09:37"],
     type: "rw",
   },
+  {
+    actionName: "Pandaemoniac Pillars",
+    timestamp: ["09:39", "09:45"],
+  },
+  {
+    actionName: "Holy / Circles of Pandaemonium",
+    timestamp: ["09:47", "09:50"],
+  },
+
   {
     actionName: "Pandemoniac Meltdown",
     timestamp: ["09:54", "09:59"],
@@ -359,6 +571,16 @@ export const PLDEvents: TimelinePlayerEvent[] = [
    * Oath gauge
    */
   {
+    actionName: "Sheltron",
+    timestamp: ["01:06"],
+    type: "gcd",
+  },
+  {
+    actionName: "Sheltron",
+    timestamp: ["01:18"],
+    type: "gcd",
+  },
+  {
     actionName: "Intervention",
     timestamp: ["02:48"],
     type: "gcd",
@@ -408,6 +630,11 @@ export const PLDEvents: TimelinePlayerEvent[] = [
    * Misc
    */
   {
+    actionName: "Hallowed Ground",
+    timestamp: ["00:21"],
+    type: "gcd",
+  },
+  {
     actionName: "Sprint",
     timestamp: ["03:36"],
     type: "gcd",
@@ -444,6 +671,18 @@ export const PLDEvents: TimelinePlayerEvent[] = [
   /**
    * Other tank
    */
+  {
+    actionName: "Reprisal",
+    timestamp: ["01:05"],
+    type: "ogcd",
+    opacity: true,
+  },
+  {
+    actionName: "Reprisal",
+    timestamp: ["02:34"],
+    type: "ogcd",
+    opacity: true,
+  },
   {
     actionName: "Reprisal",
     timestamp: ["04:34"],
